@@ -7,21 +7,14 @@
 //
 
 import Cocoa
+import SwiftUI
 
-class ViewController: NSViewController {
+class ViewController: NSSplitViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-
-    override var representedObject: Any? {
-        didSet {
-        // Update the view, if already loaded.
-        }
-    }
-
-
 }
 
