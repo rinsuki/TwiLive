@@ -16,6 +16,8 @@ internal enum StoryboardScene {
     internal static let storyboardName = "Main"
 
     internal static let initialScene = InitialSceneType<AppKit.NSWindowController>(storyboard: Main.self)
+
+    internal static let loginWithTwitter = SceneType<TwiLive.LoginWithTwitterViewController>(storyboard: Main.self, identifier: "loginWithTwitter")
   }
 }
 // swiftlint:enable explicit_type_interface identifier_name line_length type_body_length type_name

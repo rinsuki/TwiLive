@@ -16,5 +16,10 @@ class ViewController: NSSplitViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    override func viewDidAppear() {
+        let authorizeSheet = StoryboardScene.Main.loginWithTwitter.instantiate()
+        presentAsSheet(authorizeSheet)
+    }
 }
 

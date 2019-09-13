@@ -19,6 +19,7 @@
 		CE7188C6232B640800C34398 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7188C5232B640800C34398 /* TimelineViewController.swift */; };
 		CEC2E2D0232BFFA000CF1028 /* StoryboardScenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2E2CE232BFFA000CF1028 /* StoryboardScenes.swift */; };
 		CEC2E2D1232BFFA000CF1028 /* StoryboardSegues.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2E2CF232BFFA000CF1028 /* StoryboardSegues.swift */; };
+		CEC2E2D3232C065F00CF1028 /* LoginWithTwitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2E2D2232C065F00CF1028 /* LoginWithTwitterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		CEC2E2CA232BFEA300CF1028 /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		CEC2E2CE232BFFA000CF1028 /* StoryboardScenes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardScenes.swift; sourceTree = "<group>"; };
 		CEC2E2CF232BFFA000CF1028 /* StoryboardSegues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardSegues.swift; sourceTree = "<group>"; };
+		CEC2E2D2232C065F00CF1028 /* LoginWithTwitterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithTwitterViewController.swift; sourceTree = "<group>"; };
 		D2AE144EEF47418CE6B42144 /* Pods-TwiLive-TwiLiveUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwiLive-TwiLiveUITests.release.xcconfig"; path = "Target Support Files/Pods-TwiLive-TwiLiveUITests/Pods-TwiLive-TwiLiveUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E20E2CA7FCEF75A738EA7E42 /* Pods_TwiLiveTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwiLiveTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6059F317883561FB8F9A403 /* Pods_TwiLive_TwiLiveUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwiLive_TwiLiveUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,6 +149,7 @@
 				CEC2E2CD232BFF5700CF1028 /* Generated */,
 				CE5395B72324A54300198A0D /* AppDelegate.swift */,
 				CE5395B92324A54300198A0D /* ViewController.swift */,
+				CEC2E2D2232C065F00CF1028 /* LoginWithTwitterViewController.swift */,
 				CE7188C5232B640800C34398 /* TimelineViewController.swift */,
 				CE5395BB2324A54500198A0D /* Assets.xcassets */,
 				CE5395BD2324A54500198A0D /* Main.storyboard */,
@@ -408,6 +411,7 @@
 				CE5395B82324A54300198A0D /* AppDelegate.swift in Sources */,
 				CEC2E2D1232BFFA000CF1028 /* StoryboardSegues.swift in Sources */,
 				CE7188C6232B640800C34398 /* TimelineViewController.swift in Sources */,
+				CEC2E2D3232C065F00CF1028 /* LoginWithTwitterViewController.swift in Sources */,
 				CEC2E2D0232BFFA000CF1028 /* StoryboardScenes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
