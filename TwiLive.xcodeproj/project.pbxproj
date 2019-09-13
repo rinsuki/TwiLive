@@ -47,7 +47,7 @@
 		CE5395D12324A54500198A0D /* TwiLiveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwiLiveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE5395D52324A54500198A0D /* TwiLiveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwiLiveUITests.swift; sourceTree = "<group>"; };
 		CE5395D72324A54500198A0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE7188C5232B640800C34398 /* TimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TimelineViewController.swift; path = Assets.xcassets/TimelineViewController.swift; sourceTree = "<group>"; };
+		CE7188C5232B640800C34398 /* TimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
