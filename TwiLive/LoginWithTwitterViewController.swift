@@ -18,4 +18,18 @@ class LoginWithTwitterViewController: NSViewController {
         progressIndicator.startAnimation(self)
     }
     
+    override func viewDidAppear() {
+        super.viewDidAppear()
+        view.window?.preventsApplicationTerminationWhenModal = false
+    }
+    
+    override func viewDidDisappear() {
+        super.viewDidDisappear()
+        view.window?.preventsApplicationTerminationWhenModal = true
+    }
+    
+    @IBAction func quitButtonClicked(_ sender: Any) {
+        self.dismiss(self)
+        NSApplication.shared.terminate(self)
+    }
 }

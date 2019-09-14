@@ -812,7 +812,13 @@
                                                 <buttonCell key="cell" type="push" title="終了" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="PM5-O6-U5v">
                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                     <font key="font" metaFont="system"/>
+                                                    <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
                                                 </buttonCell>
+                                                <connections>
+                                                    <action selector="quitButtonClicked:" target="ydc-XM-5po" id="Uwm-S8-2iT"/>
+                                                </connections>
                                             </button>
                                             <customView horizontalHuggingPriority="249" translatesAutoresizingMaskIntoConstraints="NO" id="jHr-cT-OPh">
                                                 <rect key="frame" x="61" y="21" width="341" height="0.0"/>
@@ -825,6 +831,9 @@
                                                 <buttonCell key="cell" type="push" title="認証" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="fzP-7N-l0h">
                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                     <font key="font" metaFont="system"/>
+                                                    <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
                                                 </buttonCell>
                                             </button>
                                         </subviews>
@@ -898,7 +907,7 @@
                                             <tableColumns>
                                                 <tableColumn width="442" minWidth="40" maxWidth="65535" id="yMZ-Q5-mob">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
-                                                        <font key="font" metaFont="message" size="11"/>
+                                                        <font key="font" metaFont="menu" size="11"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
                                                     </tableHeaderCell>
