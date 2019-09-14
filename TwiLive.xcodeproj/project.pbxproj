@@ -146,15 +146,13 @@
 		CE5395B62324A54300198A0D /* TwiLive */ = {
 			isa = PBXGroup;
 			children = (
-				CEC2E2CD232BFF5700CF1028 /* Generated */,
 				CE5395B72324A54300198A0D /* AppDelegate.swift */,
-				CE5395B92324A54300198A0D /* ViewController.swift */,
-				CEC2E2D2232C065F00CF1028 /* LoginWithTwitterViewController.swift */,
-				CE7188C5232B640800C34398 /* TimelineViewController.swift */,
 				CE5395BB2324A54500198A0D /* Assets.xcassets */,
-				CE5395BD2324A54500198A0D /* Main.storyboard */,
 				CE5395C02324A54500198A0D /* Info.plist */,
 				CE5395C12324A54500198A0D /* TwiLive.entitlements */,
+				CE5395BD2324A54500198A0D /* Main.storyboard */,
+				CE5F0090232C97C0002840A4 /* ViewControllers */,
+				CEC2E2CD232BFF5700CF1028 /* Generated */,
 			);
 			path = TwiLive;
 			sourceTree = "<group>";
@@ -175,6 +173,16 @@
 				CE5395D72324A54500198A0D /* Info.plist */,
 			);
 			path = TwiLiveUITests;
+			sourceTree = "<group>";
+		};
+		CE5F0090232C97C0002840A4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE5395B92324A54300198A0D /* ViewController.swift */,
+				CEC2E2D2232C065F00CF1028 /* LoginWithTwitterViewController.swift */,
+				CE7188C5232B640800C34398 /* TimelineViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		CEC2E2CD232BFF5700CF1028 /* Generated */ = {
