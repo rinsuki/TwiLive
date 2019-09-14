@@ -3,19 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0B46BAC2FA6EF8CABCA87B4D /* Pods_TwiLiveTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E20E2CA7FCEF75A738EA7E42 /* Pods_TwiLiveTests.framework */; };
 		40DDB23ECB1F85CB6BA5BDF1 /* Pods_TwiLive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6DA07AC21582C5F93E9437C /* Pods_TwiLive.framework */; };
 		6B683ECFFFFCA4FAEBF322F4 /* Pods_TwiLive_TwiLiveUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6059F317883561FB8F9A403 /* Pods_TwiLive_TwiLiveUITests.framework */; };
+		CE381291232D4502005D0218 /* String+parseQueryParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE381290232D4502005D0218 /* String+parseQueryParameters.swift */; };
 		CE5395B82324A54300198A0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5395B72324A54300198A0D /* AppDelegate.swift */; };
 		CE5395BA2324A54300198A0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5395B92324A54300198A0D /* ViewController.swift */; };
 		CE5395BC2324A54500198A0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5395BB2324A54500198A0D /* Assets.xcassets */; };
 		CE5395BF2324A54500198A0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5395BD2324A54500198A0D /* Main.storyboard */; };
 		CE5395CB2324A54500198A0D /* TwiLiveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5395CA2324A54500198A0D /* TwiLiveTests.swift */; };
 		CE5395D62324A54500198A0D /* TwiLiveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5395D52324A54500198A0D /* TwiLiveUITests.swift */; };
+		CE5F0093232C9E8F002840A4 /* TwitterAuthApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5F0092232C9E8F002840A4 /* TwitterAuthApp.swift */; };
+		CE5F0096232CA4CC002840A4 /* CharacterSet+rfc3986.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5F0095232CA4CC002840A4 /* CharacterSet+rfc3986.swift */; };
+		CE5F00BE232CDAFB002840A4 /* String+hmacSHA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5F00BD232CDAFB002840A4 /* String+hmacSHA1.swift */; };
+		CE5F00C1232CDDFC002840A4 /* UserAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5F00C0232CDDFC002840A4 /* UserAgent.swift */; };
 		CE7188C6232B640800C34398 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7188C5232B640800C34398 /* TimelineViewController.swift */; };
 		CEC2E2D0232BFFA000CF1028 /* StoryboardScenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2E2CE232BFFA000CF1028 /* StoryboardScenes.swift */; };
 		CEC2E2D1232BFFA000CF1028 /* StoryboardSegues.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2E2CF232BFFA000CF1028 /* StoryboardSegues.swift */; };
@@ -39,6 +44,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CE5F00B6232CC01C002840A4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		4B40F16559649E985C642666 /* Pods-TwiLive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwiLive.release.xcconfig"; path = "Target Support Files/Pods-TwiLive/Pods-TwiLive.release.xcconfig"; sourceTree = "<group>"; };
 		5BEF45094990E42E9281602C /* Pods-TwiLiveTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwiLiveTests.debug.xcconfig"; path = "Target Support Files/Pods-TwiLiveTests/Pods-TwiLiveTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -46,6 +64,7 @@
 		A411C0F61DDC63ED37869FF1 /* Pods-TwiLiveTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwiLiveTests.release.xcconfig"; path = "Target Support Files/Pods-TwiLiveTests/Pods-TwiLiveTests.release.xcconfig"; sourceTree = "<group>"; };
 		BD22A9CC2E5011BE8477E09D /* Pods-TwiLive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwiLive.debug.xcconfig"; path = "Target Support Files/Pods-TwiLive/Pods-TwiLive.debug.xcconfig"; sourceTree = "<group>"; };
 		C6DA07AC21582C5F93E9437C /* Pods_TwiLive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwiLive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE381290232D4502005D0218 /* String+parseQueryParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+parseQueryParameters.swift"; sourceTree = "<group>"; };
 		CE5395B42324A54300198A0D /* TwiLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwiLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE5395B72324A54300198A0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE5395B92324A54300198A0D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +78,10 @@
 		CE5395D12324A54500198A0D /* TwiLiveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwiLiveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE5395D52324A54500198A0D /* TwiLiveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwiLiveUITests.swift; sourceTree = "<group>"; };
 		CE5395D72324A54500198A0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE5F0092232C9E8F002840A4 /* TwitterAuthApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterAuthApp.swift; sourceTree = "<group>"; };
+		CE5F0095232CA4CC002840A4 /* CharacterSet+rfc3986.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CharacterSet+rfc3986.swift"; sourceTree = "<group>"; };
+		CE5F00BD232CDAFB002840A4 /* String+hmacSHA1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+hmacSHA1.swift"; sourceTree = "<group>"; };
+		CE5F00C0232CDDFC002840A4 /* UserAgent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAgent.swift; sourceTree = "<group>"; };
 		CE7188C5232B640800C34398 /* TimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
 		CEC2E2CA232BFEA300CF1028 /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		CEC2E2CE232BFFA000CF1028 /* StoryboardScenes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardScenes.swift; sourceTree = "<group>"; };
@@ -152,6 +175,8 @@
 				CE5395C12324A54500198A0D /* TwiLive.entitlements */,
 				CE5395BD2324A54500198A0D /* Main.storyboard */,
 				CE5F0090232C97C0002840A4 /* ViewControllers */,
+				CE5F0091232C9E4F002840A4 /* TwitterAPI */,
+				CE5F00BF232CDDF1002840A4 /* Common */,
 				CEC2E2CD232BFF5700CF1028 /* Generated */,
 			);
 			path = TwiLive;
@@ -185,6 +210,33 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		CE5F0091232C9E4F002840A4 /* TwitterAPI */ = {
+			isa = PBXGroup;
+			children = (
+				CE5F0092232C9E8F002840A4 /* TwitterAuthApp.swift */,
+			);
+			path = TwitterAPI;
+			sourceTree = "<group>";
+		};
+		CE5F0094232CA4BB002840A4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CE5F0095232CA4CC002840A4 /* CharacterSet+rfc3986.swift */,
+				CE381290232D4502005D0218 /* String+parseQueryParameters.swift */,
+				CE5F00BD232CDAFB002840A4 /* String+hmacSHA1.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CE5F00BF232CDDF1002840A4 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CE5F0094232CA4BB002840A4 /* Extensions */,
+				CE5F00C0232CDDFC002840A4 /* UserAgent.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		CEC2E2CD232BFF5700CF1028 /* Generated */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +258,8 @@
 				CE5395B02324A54300198A0D /* Sources */,
 				CE5395B12324A54300198A0D /* Frameworks */,
 				CE5395B22324A54300198A0D /* Resources */,
+				CE5F00B6232CC01C002840A4 /* Embed Frameworks */,
+				770B8AE029E8953B361567D0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -243,6 +297,7 @@
 				CE5395CD2324A54500198A0D /* Sources */,
 				CE5395CE2324A54500198A0D /* Frameworks */,
 				CE5395CF2324A54500198A0D /* Resources */,
+				0D15BEB90DBAA3F3B3F01ABA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -324,6 +379,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0D15BEB90DBAA3F3B3F01ABA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TwiLive-TwiLiveUITests/Pods-TwiLive-TwiLiveUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TwiLive-TwiLiveUITests/Pods-TwiLive-TwiLiveUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TwiLive-TwiLiveUITests/Pods-TwiLive-TwiLiveUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		1CD683F09FCC890D00421B57 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -366,6 +438,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		770B8AE029E8953B361567D0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TwiLive/Pods-TwiLive-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TwiLive/Pods-TwiLive-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TwiLive/Pods-TwiLive-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CEC2E2CC232BFF2A00CF1028 /* SwiftGen */ = {
@@ -419,7 +508,12 @@
 				CE5395B82324A54300198A0D /* AppDelegate.swift in Sources */,
 				CEC2E2D1232BFFA000CF1028 /* StoryboardSegues.swift in Sources */,
 				CE7188C6232B640800C34398 /* TimelineViewController.swift in Sources */,
+				CE381291232D4502005D0218 /* String+parseQueryParameters.swift in Sources */,
+				CE5F00C1232CDDFC002840A4 /* UserAgent.swift in Sources */,
+				CE5F0093232C9E8F002840A4 /* TwitterAuthApp.swift in Sources */,
 				CEC2E2D3232C065F00CF1028 /* LoginWithTwitterViewController.swift in Sources */,
+				CE5F0096232CA4CC002840A4 /* CharacterSet+rfc3986.swift in Sources */,
+				CE5F00BE232CDAFB002840A4 /* String+hmacSHA1.swift in Sources */,
 				CEC2E2D0232BFFA000CF1028 /* StoryboardScenes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -584,6 +678,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BD22A9CC2E5011BE8477E09D /* Pods-TwiLive.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TwiLive/TwiLive.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -605,6 +700,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4B40F16559649E985C642666 /* Pods-TwiLive.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TwiLive/TwiLive.entitlements;
 				CODE_SIGN_STYLE = Automatic;

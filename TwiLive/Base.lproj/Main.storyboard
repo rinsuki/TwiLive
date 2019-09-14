@@ -688,7 +688,7 @@
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
-                        <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
                         <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
                         </connections>
@@ -731,11 +731,11 @@
             <objects>
                 <viewController storyboardIdentifier="loginWithTwitter" id="ydc-XM-5po" customClass="LoginWithTwitterViewController" customModule="TwiLive" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="U8I-Dx-zJZ">
-                        <rect key="frame" x="0.0" y="0.0" width="503" height="230"/>
+                        <rect key="frame" x="0.0" y="0.0" width="520" height="230"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="12" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="250" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zqV-Cd-nEx">
-                                <rect key="frame" x="20" y="20" width="463" height="190"/>
+                                <rect key="frame" x="20" y="20" width="480" height="190"/>
                                 <subviews>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Mmh-hr-leL">
                                         <rect key="frame" x="-2" y="171" width="297" height="19"/>
@@ -756,21 +756,21 @@
                                         </textFieldCell>
                                     </textField>
                                     <stackView distribution="fill" orientation="horizontal" alignment="centerY" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="250" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="09h-1N-Tm9">
-                                        <rect key="frame" x="0.0" y="94" width="463" height="21"/>
+                                        <rect key="frame" x="0.0" y="94" width="480" height="21"/>
                                         <subviews>
                                             <progressIndicator wantsLayer="YES" ambiguous="YES" maxValue="100" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="CBd-Xq-T31">
                                                 <rect key="frame" x="0.0" y="0.0" width="16" height="21"/>
                                             </progressIndicator>
                                             <textField horizontalHuggingPriority="249" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Wmh-cX-MbV">
-                                                <rect key="frame" x="22" y="3" width="370" height="16"/>
-                                                <textFieldCell key="cell" lineBreakMode="clipping" title="取得中…" id="VJJ-Yk-SWR">
+                                                <rect key="frame" x="22" y="3" width="387" height="16"/>
+                                                <textFieldCell key="cell" selectable="YES" title="取得中…" allowsEditingTextAttributes="YES" id="VJJ-Yk-SWR">
                                                     <font key="font" usesAppearanceFont="YES"/>
                                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                 </textFieldCell>
                                             </textField>
                                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fX0-Qb-MTw">
-                                                <rect key="frame" x="392" y="-7" width="77" height="32"/>
+                                                <rect key="frame" x="409" y="-7" width="77" height="32"/>
                                                 <buttonCell key="cell" type="push" title="再取得" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="pEL-Q8-BSd">
                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                     <font key="font" metaFont="system"/>
@@ -798,14 +798,14 @@
                                     </textField>
                                     <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="d8x-9t-hWy">
                                         <rect key="frame" x="0.0" y="33" width="96" height="21"/>
-                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="zjs-dc-92W">
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="1234567" drawsBackground="YES" id="zjs-dc-92W">
                                             <font key="font" usesAppearanceFont="YES"/>
                                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                     </textField>
                                     <stackView distribution="fill" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rCF-JZ-Ulp">
-                                        <rect key="frame" x="0.0" y="0.0" width="463" height="21"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="480" height="21"/>
                                         <subviews>
                                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fjD-mV-CKa">
                                                 <rect key="frame" x="-6" y="-7" width="65" height="32"/>
@@ -821,13 +821,13 @@ Gw
                                                 </connections>
                                             </button>
                                             <customView horizontalHuggingPriority="249" translatesAutoresizingMaskIntoConstraints="NO" id="jHr-cT-OPh">
-                                                <rect key="frame" x="61" y="21" width="341" height="0.0"/>
+                                                <rect key="frame" x="61" y="21" width="358" height="0.0"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" id="PJl-BK-fsE"/>
                                                 </constraints>
                                             </customView>
                                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hMX-K0-Zr6">
-                                                <rect key="frame" x="404" y="-7" width="65" height="32"/>
+                                                <rect key="frame" x="421" y="-7" width="65" height="32"/>
                                                 <buttonCell key="cell" type="push" title="認証" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="fzP-7N-l0h">
                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                     <font key="font" metaFont="system"/>
@@ -849,6 +849,9 @@ DQ
                                         </customSpacing>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="480" id="cR7-Qx-OKp"/>
+                                </constraints>
                                 <visibilityPriorities>
                                     <integer value="1000"/>
                                     <integer value="1000"/>
@@ -875,6 +878,7 @@ DQ
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="authorizeUrlField" destination="Wmh-cX-MbV" id="vqZ-SE-fKS"/>
                         <outlet property="progressIndicator" destination="CBd-Xq-T31" id="ZKg-OU-xCd"/>
                     </connections>
                 </viewController>
@@ -907,7 +911,7 @@ DQ
                                             <tableColumns>
                                                 <tableColumn width="442" minWidth="40" maxWidth="65535" id="yMZ-Q5-mob">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
-                                                        <font key="font" metaFont="menu" size="11"/>
+                                                        <font key="font" metaFont="label" size="11"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
                                                     </tableHeaderCell>
