@@ -758,10 +758,10 @@
                                     <stackView distribution="fill" orientation="horizontal" alignment="centerY" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="250" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="09h-1N-Tm9">
                                         <rect key="frame" x="0.0" y="94" width="480" height="21"/>
                                         <subviews>
-                                            <progressIndicator wantsLayer="YES" ambiguous="YES" maxValue="100" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="CBd-Xq-T31">
+                                            <progressIndicator wantsLayer="YES" ambiguous="YES" maxValue="100" displayedWhenStopped="NO" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="CBd-Xq-T31">
                                                 <rect key="frame" x="0.0" y="0.0" width="16" height="21"/>
                                             </progressIndicator>
-                                            <textField horizontalHuggingPriority="249" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Wmh-cX-MbV">
+                                            <textField horizontalHuggingPriority="249" verticalHuggingPriority="750" horizontalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="Wmh-cX-MbV">
                                                 <rect key="frame" x="22" y="3" width="387" height="16"/>
                                                 <textFieldCell key="cell" selectable="YES" title="取得中…" allowsEditingTextAttributes="YES" id="VJJ-Yk-SWR">
                                                     <font key="font" usesAppearanceFont="YES"/>
@@ -775,6 +775,9 @@
                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                     <font key="font" metaFont="system"/>
                                                 </buttonCell>
+                                                <connections>
+                                                    <action selector="refreshUrlButtonClicked:" target="ydc-XM-5po" id="Gdr-sS-E10"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <visibilityPriorities>
@@ -880,6 +883,7 @@ DQ
                     <connections>
                         <outlet property="authorizeUrlField" destination="Wmh-cX-MbV" id="vqZ-SE-fKS"/>
                         <outlet property="progressIndicator" destination="CBd-Xq-T31" id="ZKg-OU-xCd"/>
+                        <outlet property="refreshUrlButton" destination="fX0-Qb-MTw" id="UcA-FH-N7s"/>
                     </connections>
                 </viewController>
                 <customObject id="JUN-aO-3DQ" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
