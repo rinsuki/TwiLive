@@ -717,6 +717,7 @@
                         </connections>
                     </splitView>
                     <connections>
+                        <outlet property="composeTweetItem" destination="3q0-JZ-97t" id="vTk-gg-vem"/>
                         <outlet property="splitView" destination="zj0-HO-OAy" id="2ac-ah-Rnj"/>
                         <segue destination="ZhT-ck-MIj" kind="relationship" relationship="splitItems" id="gpJ-UE-UmU"/>
                         <segue destination="y35-9F-sAT" kind="relationship" relationship="splitItems" id="UBr-aR-tGG"/>
@@ -1077,10 +1078,10 @@ DQ
             </objects>
             <point key="canvasLocation" x="703" y="427"/>
         </scene>
-        <!--View Controller-->
+        <!--Compose Tweet View Controller-->
         <scene sceneID="DGs-7p-YDl">
             <objects>
-                <viewController id="y35-9F-sAT" sceneMemberID="viewController">
+                <viewController id="y35-9F-sAT" customClass="ComposeTweetViewController" customModule="TwiLive" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="q1G-lO-sXR">
                         <rect key="frame" x="0.0" y="0.0" width="551" height="121"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1115,7 +1116,7 @@ DQ
                                         </scroller>
                                     </scrollView>
                                     <stackView distribution="fill" orientation="horizontal" alignment="centerY" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="suT-nA-7Z4">
-                                        <rect key="frame" x="0.0" y="0.0" width="431" height="21"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="439" height="21"/>
                                         <subviews>
                                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="KCS-oa-B6y">
                                                 <rect key="frame" x="-2" y="3" width="44" height="16"/>
@@ -1140,11 +1141,15 @@ DQ
                                                 </constraints>
                                             </customView>
                                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GLG-e2-cOd">
-                                                <rect key="frame" x="356" y="-7" width="81" height="32"/>
-                                                <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Cxr-x9-cXt">
+                                                <rect key="frame" x="356" y="-7" width="89" height="32"/>
+                                                <buttonCell key="cell" type="push" title="ツイート" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Cxr-x9-cXt">
                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                     <font key="font" metaFont="system"/>
+                                                    <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                                                 </buttonCell>
+                                                <connections>
+                                                    <action selector="tweetButtonClicked:" target="y35-9F-sAT" id="tSu-DF-dxw"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <visibilityPriorities>
@@ -1178,6 +1183,11 @@ DQ
                             <constraint firstItem="ZTQ-Gp-BNu" firstAttribute="width" secondItem="q1G-lO-sXR" secondAttribute="width" constant="-32" id="nfg-R0-dS3"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="authorizedAccountScreenNameLabel" destination="1ik-C1-SWV" id="7z3-pJ-h62"/>
+                        <outlet property="textView" destination="vdM-HH-9kE" id="7To-xV-36I"/>
+                        <outlet property="tweetButton" destination="GLG-e2-cOd" id="XRV-SY-nw5"/>
+                    </connections>
                 </viewController>
                 <customObject id="Ey4-Xw-Wsd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

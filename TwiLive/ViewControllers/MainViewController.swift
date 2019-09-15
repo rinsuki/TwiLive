@@ -11,6 +11,7 @@ import SwiftUI
 
 class MainViewController: NSSplitViewController {
     var accessToken: TwitterAuthAccessToken?
+    @IBOutlet weak var composeTweetItem: NSSplitViewItem!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,5 +29,8 @@ class MainViewController: NSSplitViewController {
 extension MainViewController: LoginWithTwitterViewControllerDelegate {
     func didFinishAuthorize(token: TwitterAuthAccessToken) {
         accessToken = token
+        if let composeTweetVC = composeTweetItem.viewController as? ComposeTweetViewController {
+            composeTweetVC.accessToken = token
+        }
     }
 }
