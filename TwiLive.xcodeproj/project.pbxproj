@@ -213,8 +213,8 @@
 			children = (
 				CE5395B92324A54300198A0D /* MainViewController.swift */,
 				CEC2E2D2232C065F00CF1028 /* LoginWithTwitterViewController.swift */,
-				CEF78AA0232E20AE006C6343 /* ComposeTweetViewController.swift */,
 				CE7188C5232B640800C34398 /* TimelineViewController.swift */,
+				CEF78AA0232E20AE006C6343 /* ComposeTweetViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -222,10 +222,7 @@
 		CE5F0091232C9E4F002840A4 /* TwitterAPI */ = {
 			isa = PBXGroup;
 			children = (
-				CE5F0092232C9E8F002840A4 /* TwitterAuthApp.swift */,
-				CEF78A9C232D5A36006C6343 /* TwitterAuthRequestToken.swift */,
-				CEF78A9E232DE1B3006C6343 /* TwitterAuthAccessToken.swift */,
-				CEF78A9A232D5840006C6343 /* OAuthSigner.swift */,
+				CEF78AA2232E25AA006C6343 /* Auth */,
 			);
 			path = TwitterAPI;
 			sourceTree = "<group>";
@@ -256,6 +253,17 @@
 				CEC2E2CF232BFFA000CF1028 /* StoryboardSegues.swift */,
 			);
 			path = Generated;
+			sourceTree = "<group>";
+		};
+		CEF78AA2232E25AA006C6343 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				CE5F0092232C9E8F002840A4 /* TwitterAuthApp.swift */,
+				CEF78A9C232D5A36006C6343 /* TwitterAuthRequestToken.swift */,
+				CEF78A9E232DE1B3006C6343 /* TwitterAuthAccessToken.swift */,
+				CEF78A9A232D5840006C6343 /* OAuthSigner.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
