@@ -27,6 +27,7 @@
 		CEC2E2D3232C065F00CF1028 /* LoginWithTwitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2E2D2232C065F00CF1028 /* LoginWithTwitterViewController.swift */; };
 		CEF78A9B232D5840006C6343 /* OAuthSigner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF78A9A232D5840006C6343 /* OAuthSigner.swift */; };
 		CEF78A9D232D5A36006C6343 /* TwitterAuthRequestToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF78A9C232D5A36006C6343 /* TwitterAuthRequestToken.swift */; };
+		CEF78A9F232DE1B3006C6343 /* TwitterAuthAccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF78A9E232DE1B3006C6343 /* TwitterAuthAccessToken.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 		CEC2E2D2232C065F00CF1028 /* LoginWithTwitterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithTwitterViewController.swift; sourceTree = "<group>"; };
 		CEF78A9A232D5840006C6343 /* OAuthSigner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthSigner.swift; sourceTree = "<group>"; };
 		CEF78A9C232D5A36006C6343 /* TwitterAuthRequestToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterAuthRequestToken.swift; sourceTree = "<group>"; };
+		CEF78A9E232DE1B3006C6343 /* TwitterAuthAccessToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterAuthAccessToken.swift; sourceTree = "<group>"; };
 		D2AE144EEF47418CE6B42144 /* Pods-TwiLive-TwiLiveUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwiLive-TwiLiveUITests.release.xcconfig"; path = "Target Support Files/Pods-TwiLive-TwiLiveUITests/Pods-TwiLive-TwiLiveUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E20E2CA7FCEF75A738EA7E42 /* Pods_TwiLiveTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwiLiveTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6059F317883561FB8F9A403 /* Pods_TwiLive_TwiLiveUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwiLive_TwiLiveUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -219,6 +221,7 @@
 			children = (
 				CE5F0092232C9E8F002840A4 /* TwitterAuthApp.swift */,
 				CEF78A9C232D5A36006C6343 /* TwitterAuthRequestToken.swift */,
+				CEF78A9E232DE1B3006C6343 /* TwitterAuthAccessToken.swift */,
 				CEF78A9A232D5840006C6343 /* OAuthSigner.swift */,
 			);
 			path = TwitterAPI;
@@ -523,6 +526,7 @@
 				CEF78A9B232D5840006C6343 /* OAuthSigner.swift in Sources */,
 				CE5F00BE232CDAFB002840A4 /* String+hmacSHA1.swift in Sources */,
 				CEC2E2D0232BFFA000CF1028 /* StoryboardScenes.swift in Sources */,
+				CEF78A9F232DE1B3006C6343 /* TwitterAuthAccessToken.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

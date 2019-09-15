@@ -838,6 +838,9 @@ Gw
 DQ
 </string>
                                                 </buttonCell>
+                                                <connections>
+                                                    <action selector="authorizeButtonClicked:" target="ydc-XM-5po" id="Au9-1P-vis"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <visibilityPriorities>
@@ -881,7 +884,9 @@ DQ
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="authorizeSubmitButton" destination="hMX-K0-Zr6" id="eI0-XY-svn"/>
                         <outlet property="authorizeUrlField" destination="Wmh-cX-MbV" id="vqZ-SE-fKS"/>
+                        <outlet property="oauthCodeField" destination="d8x-9t-hWy" id="5Ap-LY-tp5"/>
                         <outlet property="progressIndicator" destination="CBd-Xq-T31" id="ZKg-OU-xCd"/>
                         <outlet property="refreshUrlButton" destination="fX0-Qb-MTw" id="UcA-FH-N7s"/>
                     </connections>
@@ -915,7 +920,7 @@ DQ
                                             <tableColumns>
                                                 <tableColumn width="442" minWidth="40" maxWidth="65535" id="yMZ-Q5-mob">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
-                                                        <font key="font" metaFont="label" size="11"/>
+                                                        <font key="font" metaFont="controlContent" size="11"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
                                                     </tableHeaderCell>

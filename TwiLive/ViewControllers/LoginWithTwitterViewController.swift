@@ -14,6 +14,8 @@ class LoginWithTwitterViewController: NSViewController {
     @IBOutlet weak var progressIndicator: NSProgressIndicator!
     @IBOutlet weak var authorizeUrlField: NSTextField!
     @IBOutlet weak var refreshUrlButton: NSButton!
+    @IBOutlet weak var oauthCodeField: NSTextField!
+    @IBOutlet weak var authorizeSubmitButton: NSButton!
     
     private enum RequestTokenError {
         case native(error: Error)
@@ -107,6 +109,11 @@ class LoginWithTwitterViewController: NSViewController {
                 .link: url,
                 .font: self.authorizeUrlField.font!,
             ])
+            oauthCodeField.isEnabled = true
+            authorizeSubmitButton.isEnabled = true
+        } else {
+            oauthCodeField.isEnabled = false
+            authorizeSubmitButton.isEnabled = false
         }
     }
     
@@ -118,4 +125,32 @@ class LoginWithTwitterViewController: NSViewController {
     @IBAction func refreshUrlButtonClicked(_ sender: Any) {
         getRequestToken()
     }
+    
+    @IBAction func authorizeButtonClicked(_ sender: Any) {
+        guard case .success(let token) = requestTokenState else { return }
+        let request = token.getAccessToken(code: oauthCodeField.stringValue)
+        Alamofire.request(request).responseString { [unowned self] res in
+            switch res.result {
+            case .success(let str):
+                let res = str.parseQueryParameters()
+                guard let accessToken = res["oauth_token"], let tokenSecret = res["oauth_token_secret"],
+                      let userIdStr = res["user_id"], let screenName = res["screen_name"] else {
+                    return
+                }
+                let token = TwitterAuthAccessToken(app: token.app, token: accessToken, tokenSecret: tokenSecret, userId: Int64(userIdStr)!, screenName: screenName)
+                let request = token.signer.signedRequest(.post, url: URL(string: "https://api.twitter.com/1.1/statuses/update.json")!, params: ["status": "Hello world! from TwiLive"])
+                Alamofire.request(request).responseString { r in
+                    switch r.result {
+                    case .success(let str):
+                        print(str)
+                    default:
+                        break
+                    }
+                }
+            case .failure(let err):
+                print(err)
+            }
+        }
+    }
+    
 }

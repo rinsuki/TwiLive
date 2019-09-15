@@ -49,8 +49,24 @@ struct OAuthSigner {
             .sorted { $0.key < $1.key }
             .map { "\($0.key)=\"\($0.value.addingPercentEncoding(withAllowedCharacters: .rfc3986)!)\""}
             .joined(separator: ", ")
+        let bodyParams = params.filter { (key, value) in !key.starts(with: "oauth_") }
         var request = URLRequest(url: url)
         request.httpMethod = method.rawValue
+        if bodyParams.count > 0{
+            let paramsString = bodyParams
+                .sorted { $0.key < $1.key }
+                .map { "\($0.key)=\($0.value.addingPercentEncoding(withAllowedCharacters: .rfc3986)!)"}
+                .joined(separator: "&")
+            if method == .get {
+                var components = URLComponents(url: url, resolvingAgainstBaseURL: false)!
+                components.query = paramsString
+                request.url = components.url
+            } else {
+                let paramsData = paramsString.data(using: .utf8)!
+                request.addValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
+                request.httpBody = paramsData
+            }
+        }
         request.addValue(UserAgent, forHTTPHeaderField: "User-Agent")
         request.addValue("OAuth " + header, forHTTPHeaderField: "Authorization")
         return request
