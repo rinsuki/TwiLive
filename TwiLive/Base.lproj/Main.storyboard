@@ -701,10 +701,10 @@
             </objects>
             <point key="canvasLocation" x="75" y="250"/>
         </scene>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="Pua-0D-Zlp">
             <objects>
-                <splitViewController id="w2M-pU-6cp" customClass="ViewController" customModule="TwiLive" customModuleProvider="target" sceneMemberID="viewController">
+                <splitViewController id="w2M-pU-6cp" customClass="MainViewController" customModule="TwiLive" customModuleProvider="target" sceneMemberID="viewController">
                     <splitViewItems>
                         <splitViewItem holdingPriority="249" id="BtI-kb-iGr"/>
                         <splitViewItem id="3q0-JZ-97t"/>
@@ -920,7 +920,7 @@ DQ
                                             <tableColumns>
                                                 <tableColumn width="442" minWidth="40" maxWidth="65535" id="yMZ-Q5-mob">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
-                                                        <font key="font" metaFont="controlContent" size="11"/>
+                                                        <font key="font" metaFont="label" size="11"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
                                                     </tableHeaderCell>
@@ -1091,15 +1091,15 @@ DQ
                                     <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="39i-7b-T3r">
                                         <rect key="frame" x="0.0" y="29" width="240" height="60"/>
                                         <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="gYn-hA-1dk">
-                                            <rect key="frame" x="1" y="1" width="223" height="58"/>
+                                            <rect key="frame" x="1" y="1" width="238" height="58"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <textView importsGraphics="NO" richText="NO" verticallyResizable="YES" spellingCorrection="YES" smartInsertDelete="YES" id="vdM-HH-9kE">
-                                                    <rect key="frame" x="0.0" y="0.0" width="223" height="58"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="238" height="58"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                                    <size key="minSize" width="223" height="58"/>
+                                                    <size key="minSize" width="238" height="58"/>
                                                     <size key="maxSize" width="240" height="10000000"/>
                                                     <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 </textView>
@@ -1110,7 +1110,7 @@ DQ
                                             <autoresizingMask key="autoresizingMask"/>
                                         </scroller>
                                         <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="suY-aP-eZe">
-                                            <rect key="frame" x="224" y="1" width="15" height="58"/>
+                                            <rect key="frame" x="223" y="1" width="16" height="58"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </scroller>
                                     </scrollView>

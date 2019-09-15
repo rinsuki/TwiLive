@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainViewController.swift
 //  TwiLive
 //
 //  Created by user on 2019/09/08.
@@ -9,7 +9,8 @@
 import Cocoa
 import SwiftUI
 
-class ViewController: NSSplitViewController {
+class MainViewController: NSSplitViewController {
+    var accessToken: TwitterAuthAccessToken?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +20,13 @@ class ViewController: NSSplitViewController {
     
     override func viewDidAppear() {
         let authorizeSheet = StoryboardScene.Main.loginWithTwitter.instantiate()
+        authorizeSheet.delegate = self
         presentAsSheet(authorizeSheet)
     }
 }
 
+extension MainViewController: LoginWithTwitterViewControllerDelegate {
+    func didFinishAuthorize(token: TwitterAuthAccessToken) {
+        accessToken = token
+    }
+}

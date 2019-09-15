@@ -9,6 +9,10 @@
 import Cocoa
 import Alamofire
 
+protocol LoginWithTwitterViewControllerDelegate: class {
+    func didFinishAuthorize(token: TwitterAuthAccessToken) -> Void
+}
+
 class LoginWithTwitterViewController: NSViewController {
 
     @IBOutlet weak var progressIndicator: NSProgressIndicator!
@@ -16,6 +20,8 @@ class LoginWithTwitterViewController: NSViewController {
     @IBOutlet weak var refreshUrlButton: NSButton!
     @IBOutlet weak var oauthCodeField: NSTextField!
     @IBOutlet weak var authorizeSubmitButton: NSButton!
+    
+    weak var delegate: LoginWithTwitterViewControllerDelegate?
     
     private enum RequestTokenError {
         case native(error: Error)
@@ -138,19 +144,15 @@ class LoginWithTwitterViewController: NSViewController {
                     return
                 }
                 let token = TwitterAuthAccessToken(app: token.app, token: accessToken, tokenSecret: tokenSecret, userId: Int64(userIdStr)!, screenName: screenName)
-                let request = token.signer.signedRequest(.post, url: URL(string: "https://api.twitter.com/1.1/statuses/update.json")!, params: ["status": "Hello world! from TwiLive"])
-                Alamofire.request(request).responseString { r in
-                    switch r.result {
-                    case .success(let str):
-                        print(str)
-                    default:
-                        break
-                    }
-                }
+                self.finishAuthorize(token)
             case .failure(let err):
                 print(err)
             }
         }
     }
     
+    func finishAuthorize(_ token: TwitterAuthAccessToken) {
+        self.dismiss(self)
+        self.delegate?.didFinishAuthorize(token: token)
+    }
 }
