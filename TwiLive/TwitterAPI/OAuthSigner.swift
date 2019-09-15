@@ -31,7 +31,6 @@ struct OAuthSigner {
             oauthParams[key] = value
         }
         let mergedParams = params.merging(oauthParams, uniquingKeysWith: { $1 })
-        print(mergedParams)
         let paramsStr = mergedParams
             .sorted { $0.key < $1.key }
             .map { "\($0.key)=\($0.value.addingPercentEncoding(withAllowedCharacters: .rfc3986)!)"}
