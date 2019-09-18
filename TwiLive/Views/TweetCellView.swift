@@ -87,6 +87,6 @@ class TweetCellView: NSTableCellView {
         createdAtLabel.stringValue = "00:00:00"
         contentLabel.stringValue = tweet.text
         sourceLabel.stringValue = tweet.source
-        Nuke.loadImage(with: URL(string: tweet.user.profileImageURL.replacingOccurrences(of: "_normal", with: "_bigger"))!, into: iconView)
+        Nuke.loadImage(with: URL(string: tweet.user.profileImageURL.replacingOccurrences(of: "_normal", with: "_400x400"))!, into: iconView)
     }
 }
