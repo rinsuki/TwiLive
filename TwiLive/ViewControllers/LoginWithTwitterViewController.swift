@@ -8,18 +8,42 @@
 
 import Cocoa
 import Alamofire
+import Ikemen
 
 protocol LoginWithTwitterViewControllerDelegate: class {
     func didFinishAuthorize(token: TwitterAuthAccessToken) -> Void
 }
 
 class LoginWithTwitterViewController: NSViewController {
-
-    @IBOutlet weak var progressIndicator: NSProgressIndicator!
-    @IBOutlet weak var authorizeUrlField: NSTextField!
-    @IBOutlet weak var refreshUrlButton: NSButton!
-    @IBOutlet weak var oauthCodeField: NSTextField!
-    @IBOutlet weak var authorizeSubmitButton: NSButton!
+    
+    private let progressIndicator = NSProgressIndicator() ※ { v in
+        v.style = .spinning
+        v.snp.makeConstraints { make in
+            make.width.equalTo(16)
+        }
+    }
+    
+    private let authorizeUrlField = TextLabel() ※ { v in
+        v.isSelectable = true
+        v.allowsEditingTextAttributes = true
+        v.maximumNumberOfLines = 0
+        v.setContentHuggingPriority(.init(rawValue: 249), for: .horizontal)
+        v.setContentCompressionResistancePriority(.required, for: .vertical)
+    }
+    
+    private let refreshUrlButton = NSButton(title: "再取得", target: self, action: #selector(refreshUrlButtonClicked(_:)))
+    
+    private let oauthCodeField = NSTextField() ※ { v in
+        v.placeholderString = "1234567"
+    }
+    
+    private let quitButton = NSButton(title: "終了", target: self, action: #selector(quitButtonClicked(_:))) ※ { v in
+        v.keyEquivalent = "\u{1b}"
+    }
+    
+    private let authorizeSubmitButton = NSButton(title: "認証", target: self, action: #selector(authorizeButtonClicked(_:))) ※ { v in
+        v.keyEquivalent = "\r"
+    }
     
     weak var delegate: LoginWithTwitterViewControllerDelegate?
     
@@ -37,7 +61,48 @@ class LoginWithTwitterViewController: NSViewController {
     
     private var requestTokenState: RequestTokenState? {
         didSet {
-            updateState()
+            DispatchQueue.main.async { [weak self] in self?.updateState() }
+        }
+    }
+    
+    override func loadView() {
+        view = NSStackView(views: [
+            TextLabel() ※ { v in
+                v.stringValue = "Twitterアカウントでログインしてください"
+                v.font = .boldSystemFont(ofSize: 16)
+            },
+            TextLabel() ※ { v in
+                v.wantsLayer = true
+                v.stringValue = """
+このアプリケーションを利用するためには、
+ブラウザでこのアプリにTwitterアカウントへのアクセス許可を与える必要があります
+"""
+                v.maximumNumberOfLines = 0
+            },
+            NSStackView(views: [
+                progressIndicator,
+                authorizeUrlField,
+                refreshUrlButton,
+            ]) ※ { v in
+                v.setHuggingPriority(.defaultHigh, for: .vertical)
+            },
+            TextLabel() ※ { v in
+                v.stringValue = "上のURLをブラウザで開き認証した後、表示されたPINコードを入力してください。"
+            },
+            oauthCodeField,
+            NSStackView(views: [
+                quitButton,
+                SpacerView(),
+                authorizeSubmitButton
+            ]) ※ { v in
+                v.setHuggingPriority(.required, for: .vertical)
+            },
+        ]) ※ { v in
+            v.orientation = .vertical
+            v.alignment = .leading
+            v.edgeInsets = .init(top: 20, left: 20, bottom: 20, right: 20)
+            v.snp.makeConstraints { make in make.width.equalTo(480 + (20 * 2)) }
+            v.setHuggingPriority(.required, for: .vertical)
         }
     }
     
@@ -115,6 +180,9 @@ class LoginWithTwitterViewController: NSViewController {
                 .link: url,
                 .font: self.authorizeUrlField.font!,
             ])
+            authorizeUrlField.layout()
+            view.layout()
+            view.layoutSubtreeIfNeeded()
             oauthCodeField.isEnabled = true
             authorizeSubmitButton.isEnabled = true
         } else {

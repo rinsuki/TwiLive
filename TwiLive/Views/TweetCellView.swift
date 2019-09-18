@@ -62,11 +62,11 @@ class TweetCellView: NSTableCellView {
             v.orientation = .vertical
             v.alignment = .leading
             v.setHuggingPriority(.required, for: .vertical)
-            v.spacing = 4
+            v.spacing = 2
         }
         addSubview(iconView)
         addSubview(contentStackView)
-        let inset = 4
+        let inset = 6
         iconView.snp.makeConstraints { make in
             make.top.leading.equalToSuperview().inset(inset)
             make.bottom.lessThanOrEqualToSuperview().inset(inset)

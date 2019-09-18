@@ -30,6 +30,7 @@
 		CEC2E2D0232BFFA000CF1028 /* StoryboardScenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2E2CE232BFFA000CF1028 /* StoryboardScenes.swift */; };
 		CEC2E2D1232BFFA000CF1028 /* StoryboardSegues.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2E2CF232BFFA000CF1028 /* StoryboardSegues.swift */; };
 		CEC2E2D3232C065F00CF1028 /* LoginWithTwitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2E2D2232C065F00CF1028 /* LoginWithTwitterViewController.swift */; };
+		CEEDAE422332497F005EBF31 /* SpacerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEDAE412332497F005EBF31 /* SpacerView.swift */; };
 		CEF78A9B232D5840006C6343 /* OAuthSigner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF78A9A232D5840006C6343 /* OAuthSigner.swift */; };
 		CEF78A9D232D5A36006C6343 /* TwitterAuthRequestToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF78A9C232D5A36006C6343 /* TwitterAuthRequestToken.swift */; };
 		CEF78A9F232DE1B3006C6343 /* TwitterAuthAccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF78A9E232DE1B3006C6343 /* TwitterAuthAccessToken.swift */; };
@@ -101,6 +102,7 @@
 		CEC2E2CE232BFFA000CF1028 /* StoryboardScenes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardScenes.swift; sourceTree = "<group>"; };
 		CEC2E2CF232BFFA000CF1028 /* StoryboardSegues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardSegues.swift; sourceTree = "<group>"; };
 		CEC2E2D2232C065F00CF1028 /* LoginWithTwitterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithTwitterViewController.swift; sourceTree = "<group>"; };
+		CEEDAE412332497F005EBF31 /* SpacerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacerView.swift; sourceTree = "<group>"; };
 		CEF78A9A232D5840006C6343 /* OAuthSigner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthSigner.swift; sourceTree = "<group>"; };
 		CEF78A9C232D5A36006C6343 /* TwitterAuthRequestToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterAuthRequestToken.swift; sourceTree = "<group>"; };
 		CEF78A9E232DE1B3006C6343 /* TwitterAuthAccessToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterAuthAccessToken.swift; sourceTree = "<group>"; };
@@ -273,6 +275,7 @@
 			children = (
 				CE934CD52331DFC5005F8869 /* TweetCellView.swift */,
 				CE934CD72331F254005F8869 /* TextLabel.swift */,
+				CEEDAE412332497F005EBF31 /* SpacerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -569,6 +572,7 @@
 				CE5F00C1232CDDFC002840A4 /* UserAgent.swift in Sources */,
 				CE5F0093232C9E8F002840A4 /* TwitterAuthApp.swift in Sources */,
 				CEC2E2D3232C065F00CF1028 /* LoginWithTwitterViewController.swift in Sources */,
+				CEEDAE422332497F005EBF31 /* SpacerView.swift in Sources */,
 				CE5F0096232CA4CC002840A4 /* CharacterSet+rfc3986.swift in Sources */,
 				CE934CD82331F254005F8869 /* TextLabel.swift in Sources */,
 				CEF78A9B232D5840006C6343 /* OAuthSigner.swift in Sources */,

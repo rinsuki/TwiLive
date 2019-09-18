@@ -16,6 +16,7 @@ class TextLabel: NSTextField {
         isBezeled = false
         maximumNumberOfLines = 1
         setContentCompressionResistancePriority(.init(9), for: .horizontal)
+        font = .systemFont(ofSize: NSFont.systemFontSize)
     }
     
     required init?(coder: NSCoder) {

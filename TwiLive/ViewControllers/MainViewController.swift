@@ -21,7 +21,7 @@ class MainViewController: NSSplitViewController {
     }
     
     override func viewDidAppear() {
-        let authorizeSheet = StoryboardScene.Main.loginWithTwitter.instantiate()
+        let authorizeSheet = LoginWithTwitterViewController()
         authorizeSheet.delegate = self
         presentAsSheet(authorizeSheet)
     }
