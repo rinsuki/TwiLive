@@ -11,6 +11,7 @@ import SwiftUI
 
 class MainViewController: NSSplitViewController {
     var accessToken: TwitterAuthAccessToken?
+    @IBOutlet weak var timelineItem: NSSplitViewItem!
     @IBOutlet weak var composeTweetItem: NSSplitViewItem!
 
     override func viewDidLoad() {
@@ -29,6 +30,9 @@ class MainViewController: NSSplitViewController {
 extension MainViewController: LoginWithTwitterViewControllerDelegate {
     func didFinishAuthorize(token: TwitterAuthAccessToken) {
         accessToken = token
+        if let timelineVC = timelineItem.viewController as? TimelineViewController {
+            timelineVC.accessToken = token
+        }
         if let composeTweetVC = composeTweetItem.viewController as? ComposeTweetViewController {
             composeTweetVC.accessToken = token
         }

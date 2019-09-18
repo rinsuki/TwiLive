@@ -22,6 +22,11 @@
 		CE5F00BE232CDAFB002840A4 /* String+hmacSHA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5F00BD232CDAFB002840A4 /* String+hmacSHA1.swift */; };
 		CE5F00C1232CDDFC002840A4 /* UserAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5F00C0232CDDFC002840A4 /* UserAgent.swift */; };
 		CE7188C6232B640800C34398 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7188C5232B640800C34398 /* TimelineViewController.swift */; };
+		CE934CD423314A9C005F8869 /* VisibleLimitedTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE934CD323314A9C005F8869 /* VisibleLimitedTableView.swift */; };
+		CE934CD62331DFC5005F8869 /* TweetCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE934CD52331DFC5005F8869 /* TweetCellView.swift */; };
+		CE934CD82331F254005F8869 /* TextLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE934CD72331F254005F8869 /* TextLabel.swift */; };
+		CEA0A4FE232E5F27009F1976 /* TwitterStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA0A4FD232E5F27009F1976 /* TwitterStatus.swift */; };
+		CEA0A500232E5F8A009F1976 /* TwitterUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA0A4FF232E5F8A009F1976 /* TwitterUser.swift */; };
 		CEC2E2D0232BFFA000CF1028 /* StoryboardScenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2E2CE232BFFA000CF1028 /* StoryboardScenes.swift */; };
 		CEC2E2D1232BFFA000CF1028 /* StoryboardSegues.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2E2CF232BFFA000CF1028 /* StoryboardSegues.swift */; };
 		CEC2E2D3232C065F00CF1028 /* LoginWithTwitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2E2D2232C065F00CF1028 /* LoginWithTwitterViewController.swift */; };
@@ -87,6 +92,11 @@
 		CE5F00BD232CDAFB002840A4 /* String+hmacSHA1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+hmacSHA1.swift"; sourceTree = "<group>"; };
 		CE5F00C0232CDDFC002840A4 /* UserAgent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAgent.swift; sourceTree = "<group>"; };
 		CE7188C5232B640800C34398 /* TimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
+		CE934CD323314A9C005F8869 /* VisibleLimitedTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisibleLimitedTableView.swift; sourceTree = "<group>"; };
+		CE934CD52331DFC5005F8869 /* TweetCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetCellView.swift; sourceTree = "<group>"; };
+		CE934CD72331F254005F8869 /* TextLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextLabel.swift; sourceTree = "<group>"; };
+		CEA0A4FD232E5F27009F1976 /* TwitterStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterStatus.swift; sourceTree = "<group>"; };
+		CEA0A4FF232E5F8A009F1976 /* TwitterUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterUser.swift; sourceTree = "<group>"; };
 		CEC2E2CA232BFEA300CF1028 /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		CEC2E2CE232BFFA000CF1028 /* StoryboardScenes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardScenes.swift; sourceTree = "<group>"; };
 		CEC2E2CF232BFFA000CF1028 /* StoryboardSegues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardSegues.swift; sourceTree = "<group>"; };
@@ -182,6 +192,7 @@
 				CE5395C02324A54500198A0D /* Info.plist */,
 				CE5395C12324A54500198A0D /* TwiLive.entitlements */,
 				CE5395BD2324A54500198A0D /* Main.storyboard */,
+				CEA0A501232E6BE4009F1976 /* Views */,
 				CE5F0090232C97C0002840A4 /* ViewControllers */,
 				CE5F0091232C9E4F002840A4 /* TwitterAPI */,
 				CE5F00BF232CDDF1002840A4 /* Common */,
@@ -222,6 +233,7 @@
 		CE5F0091232C9E4F002840A4 /* TwitterAPI */ = {
 			isa = PBXGroup;
 			children = (
+				CEA0A4FC232E5F16009F1976 /* Entity */,
 				CEF78AA2232E25AA006C6343 /* Auth */,
 			);
 			path = TwitterAPI;
@@ -242,8 +254,27 @@
 			children = (
 				CE5F0094232CA4BB002840A4 /* Extensions */,
 				CE5F00C0232CDDFC002840A4 /* UserAgent.swift */,
+				CE934CD323314A9C005F8869 /* VisibleLimitedTableView.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		CEA0A4FC232E5F16009F1976 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				CEA0A4FD232E5F27009F1976 /* TwitterStatus.swift */,
+				CEA0A4FF232E5F8A009F1976 /* TwitterUser.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		CEA0A501232E6BE4009F1976 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE934CD52331DFC5005F8869 /* TweetCellView.swift */,
+				CE934CD72331F254005F8869 /* TextLabel.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		CEC2E2CD232BFF5700CF1028 /* Generated */ = {
@@ -529,12 +560,17 @@
 				CEF78AA1232E20AE006C6343 /* ComposeTweetViewController.swift in Sources */,
 				CEC2E2D1232BFFA000CF1028 /* StoryboardSegues.swift in Sources */,
 				CE7188C6232B640800C34398 /* TimelineViewController.swift in Sources */,
+				CEA0A4FE232E5F27009F1976 /* TwitterStatus.swift in Sources */,
+				CE934CD423314A9C005F8869 /* VisibleLimitedTableView.swift in Sources */,
 				CEF78A9D232D5A36006C6343 /* TwitterAuthRequestToken.swift in Sources */,
+				CEA0A500232E5F8A009F1976 /* TwitterUser.swift in Sources */,
+				CE934CD62331DFC5005F8869 /* TweetCellView.swift in Sources */,
 				CE381291232D4502005D0218 /* String+parseQueryParameters.swift in Sources */,
 				CE5F00C1232CDDFC002840A4 /* UserAgent.swift in Sources */,
 				CE5F0093232C9E8F002840A4 /* TwitterAuthApp.swift in Sources */,
 				CEC2E2D3232C065F00CF1028 /* LoginWithTwitterViewController.swift in Sources */,
 				CE5F0096232CA4CC002840A4 /* CharacterSet+rfc3986.swift in Sources */,
+				CE934CD82331F254005F8869 /* TextLabel.swift in Sources */,
 				CEF78A9B232D5840006C6343 /* OAuthSigner.swift in Sources */,
 				CE5F00BE232CDAFB002840A4 /* String+hmacSHA1.swift in Sources */,
 				CEC2E2D0232BFFA000CF1028 /* StoryboardScenes.swift in Sources */,

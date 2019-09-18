@@ -8,6 +8,9 @@ target 'TwiLive' do
   # Pods for TwiLive
   pod "SwiftGen"
   pod "Alamofire"
+  pod "※ikemen"
+  pod "SnapKit"
+  pod "Nuke"
 
   target 'TwiLiveTests' do
     inherit! :search_paths

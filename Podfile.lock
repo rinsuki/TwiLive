@@ -1,20 +1,32 @@
 PODS:
   - Alamofire (4.9.0)
+  - Nuke (8.1.1)
+  - SnapKit (5.0.1)
   - SwiftGen (6.1.0)
+  - "※ikemen (0.6.0)"
 
 DEPENDENCIES:
   - Alamofire
+  - Nuke
+  - SnapKit
   - SwiftGen
+  - "※ikemen"
 
 SPEC REPOS:
   https://cdn.cocoapods.org/:
     - Alamofire
+    - Nuke
+    - SnapKit
     - SwiftGen
+    - "※ikemen"
 
 SPEC CHECKSUMS:
   Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
+  Nuke: 757b88d4ef35a40366cf08c2cd8ea8d12142dbbf
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwiftGen: f872ca75cbd17bf7103c17f13dcfa0d9a15667b0
+  "※ikemen": da47fe6e0acfbe241611221f4d98ade266bf50a2
 
-PODFILE CHECKSUM: 08986a7ee54ec2d3786a689f070a257e20dfcb61
+PODFILE CHECKSUM: 8f75f000eec0d3fa7ac77536c12d6a36c22aba60
 
 COCOAPODS: 1.8.0.beta.2
