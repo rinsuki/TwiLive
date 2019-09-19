@@ -84,7 +84,7 @@ class LoginWithTwitterViewController: NSViewController {
                 authorizeUrlField,
                 refreshUrlButton,
             ]) ※ { v in
-                v.setHuggingPriority(.defaultHigh, for: .vertical)
+                v.setHuggingPriority(.required, for: .vertical)
             },
             TextLabel() ※ { v in
                 v.stringValue = "上のURLをブラウザで開き認証した後、表示されたPINコードを入力してください。"
