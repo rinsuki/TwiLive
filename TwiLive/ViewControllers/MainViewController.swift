@@ -11,13 +11,16 @@ import SwiftUI
 
 class MainViewController: NSSplitViewController {
     var accessToken: TwitterAuthAccessToken?
-    @IBOutlet weak var timelineItem: NSSplitViewItem!
-    @IBOutlet weak var composeTweetItem: NSSplitViewItem!
+    let timelineVC = TimelineViewController()
+    let composeTweetVC = ComposeTweetViewController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        splitView.isVertical = false
+        addSplitViewItem(.init(viewController: timelineVC))
+        addSplitViewItem(.init(viewController: composeTweetVC))
     }
     
     override func viewDidAppear() {
@@ -30,11 +33,7 @@ class MainViewController: NSSplitViewController {
 extension MainViewController: LoginWithTwitterViewControllerDelegate {
     func didFinishAuthorize(token: TwitterAuthAccessToken) {
         accessToken = token
-        if let timelineVC = timelineItem.viewController as? TimelineViewController {
-            timelineVC.accessToken = token
-        }
-        if let composeTweetVC = composeTweetItem.viewController as? ComposeTweetViewController {
-            composeTweetVC.accessToken = token
-        }
+        timelineVC.accessToken = token
+        composeTweetVC.accessToken = token
     }
 }

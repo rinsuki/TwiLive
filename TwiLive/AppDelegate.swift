@@ -10,11 +10,12 @@ import Cocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-
+    var mainWC = MainWindowController()
 
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
+        mainWC.showWindow(self)
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {

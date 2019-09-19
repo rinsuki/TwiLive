@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14868"/>
-        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -679,103 +678,6 @@
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="75" y="0.0"/>
-        </scene>
-        <!--Window Controller-->
-        <scene sceneID="R2V-B0-nI4">
-            <objects>
-                <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
-                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
-                        <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
-                        <toolbar key="toolbar" implicitIdentifier="701C1504-046C-4E28-8853-FE93E074BE7E" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="regular" id="a2O-mL-Ccq">
-                            <allowedToolbarItems>
-                                <toolbarItem implicitItemIdentifier="852BB5E0-6BB5-4996-A5A1-425E8A1FFC1C" label="ハッシュタグ" paletteLabel="ハッシュタグ" sizingBehavior="auto" id="ay9-Zu-1yb">
-                                    <nil key="toolTip"/>
-                                    <segmentedControl key="view" verticalHuggingPriority="750" id="1iM-Er-Mgk">
-                                        <rect key="frame" x="15" y="14" width="38" height="24"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <segmentedCell key="cell" borderStyle="border" alignment="left" style="texturedSquare" trackingMode="momentary" id="zdK-j2-QF7">
-                                            <font key="font" metaFont="system"/>
-                                            <segments>
-                                                <segment label="#" width="32"/>
-                                            </segments>
-                                        </segmentedCell>
-                                    </segmentedControl>
-                                </toolbarItem>
-                                <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="yWg-CG-4J8"/>
-                                <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="fVv-4Q-Ui1"/>
-                            </allowedToolbarItems>
-                            <defaultToolbarItems>
-                                <toolbarItem reference="ay9-Zu-1yb"/>
-                                <toolbarItem reference="fVv-4Q-Ui1"/>
-                            </defaultToolbarItems>
-                        </toolbar>
-                        <connections>
-                            <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
-                        </connections>
-                    </window>
-                    <connections>
-                        <segue destination="w2M-pU-6cp" kind="relationship" relationship="window.shadowedContentViewController" id="brk-U6-fmn"/>
-                    </connections>
-                </windowController>
-                <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="75" y="250"/>
-        </scene>
-        <!--Main View Controller-->
-        <scene sceneID="Pua-0D-Zlp">
-            <objects>
-                <splitViewController id="w2M-pU-6cp" customClass="MainViewController" customModule="TwiLive" customModuleProvider="target" sceneMemberID="viewController">
-                    <splitViewItems>
-                        <splitViewItem holdingPriority="249" id="BtI-kb-iGr"/>
-                        <splitViewItem id="3q0-JZ-97t"/>
-                    </splitViewItems>
-                    <splitView key="splitView" dividerStyle="thin" id="zj0-HO-OAy">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <connections>
-                            <outlet property="delegate" destination="w2M-pU-6cp" id="DXX-99-8Gr"/>
-                        </connections>
-                    </splitView>
-                    <connections>
-                        <outlet property="composeTweetItem" destination="3q0-JZ-97t" id="vTk-gg-vem"/>
-                        <outlet property="splitView" destination="zj0-HO-OAy" id="2ac-ah-Rnj"/>
-                        <outlet property="timelineItem" destination="BtI-kb-iGr" id="2eg-83-VXi"/>
-                        <segue destination="ZhT-ck-MIj" kind="relationship" relationship="splitItems" id="gpJ-UE-UmU"/>
-                        <segue destination="y35-9F-sAT" kind="relationship" relationship="splitItems" id="UBr-aR-tGG"/>
-                    </connections>
-                </splitViewController>
-                <customObject id="My4-mC-M6Z" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="75" y="680"/>
-        </scene>
-        <!--Timeline View Controller-->
-        <scene sceneID="VET-yU-xP8">
-            <objects>
-                <viewController id="ZhT-ck-MIj" customClass="TimelineViewController" customModule="TwiLive" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="zQw-R7-M5e">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="300"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </view>
-                </viewController>
-                <customObject id="PZL-Mu-agl" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="703" y="427"/>
-        </scene>
-        <!--Compose Tweet View Controller-->
-        <scene sceneID="DGs-7p-YDl">
-            <objects>
-                <viewController id="y35-9F-sAT" customClass="ComposeTweetViewController" customModule="TwiLive" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" wantsLayer="YES" id="q1G-lO-sXR">
-                        <rect key="frame" x="0.0" y="0.0" width="551" height="121"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </view>
-                </viewController>
-                <customObject id="Ey4-Xw-Wsd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="703.5" y="794"/>
         </scene>
     </scenes>
 </document>
