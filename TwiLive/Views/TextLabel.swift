@@ -9,7 +9,7 @@
 import Cocoa
 
 class TextLabel: NSTextField {
-    init() {
+    init(string: String? = nil) {
         super.init(frame: .zero)
         isEditable = false
         drawsBackground = false
@@ -17,6 +17,9 @@ class TextLabel: NSTextField {
         maximumNumberOfLines = 1
         setContentCompressionResistancePriority(.init(9), for: .horizontal)
         font = .systemFont(ofSize: NSFont.systemFontSize)
+        if let string = string {
+            stringValue = string
+        }
     }
     
     required init?(coder: NSCoder) {

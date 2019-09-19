@@ -10,6 +10,7 @@
 		0B46BAC2FA6EF8CABCA87B4D /* Pods_TwiLiveTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E20E2CA7FCEF75A738EA7E42 /* Pods_TwiLiveTests.framework */; };
 		40DDB23ECB1F85CB6BA5BDF1 /* Pods_TwiLive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6DA07AC21582C5F93E9437C /* Pods_TwiLive.framework */; };
 		6B683ECFFFFCA4FAEBF322F4 /* Pods_TwiLive_TwiLiveUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6059F317883561FB8F9A403 /* Pods_TwiLive_TwiLiveUITests.framework */; };
+		CE07ABBA23332B8600FB530D /* NSEdgeInsets+easyInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE07ABB923332B8600FB530D /* NSEdgeInsets+easyInit.swift */; };
 		CE381291232D4502005D0218 /* String+parseQueryParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE381290232D4502005D0218 /* String+parseQueryParameters.swift */; };
 		CE5395B82324A54300198A0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5395B72324A54300198A0D /* AppDelegate.swift */; };
 		CE5395BA2324A54300198A0D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5395B92324A54300198A0D /* MainViewController.swift */; };
@@ -74,6 +75,7 @@
 		A411C0F61DDC63ED37869FF1 /* Pods-TwiLiveTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwiLiveTests.release.xcconfig"; path = "Target Support Files/Pods-TwiLiveTests/Pods-TwiLiveTests.release.xcconfig"; sourceTree = "<group>"; };
 		BD22A9CC2E5011BE8477E09D /* Pods-TwiLive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwiLive.debug.xcconfig"; path = "Target Support Files/Pods-TwiLive/Pods-TwiLive.debug.xcconfig"; sourceTree = "<group>"; };
 		C6DA07AC21582C5F93E9437C /* Pods_TwiLive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwiLive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE07ABB923332B8600FB530D /* NSEdgeInsets+easyInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSEdgeInsets+easyInit.swift"; sourceTree = "<group>"; };
 		CE381290232D4502005D0218 /* String+parseQueryParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+parseQueryParameters.swift"; sourceTree = "<group>"; };
 		CE5395B42324A54300198A0D /* TwiLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwiLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE5395B72324A54300198A0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -247,6 +249,7 @@
 				CE5F0095232CA4CC002840A4 /* CharacterSet+rfc3986.swift */,
 				CE381290232D4502005D0218 /* String+parseQueryParameters.swift */,
 				CE5F00BD232CDAFB002840A4 /* String+hmacSHA1.swift */,
+				CE07ABB923332B8600FB530D /* NSEdgeInsets+easyInit.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -567,6 +570,7 @@
 				CE934CD423314A9C005F8869 /* VisibleLimitedTableView.swift in Sources */,
 				CEF78A9D232D5A36006C6343 /* TwitterAuthRequestToken.swift in Sources */,
 				CEA0A500232E5F8A009F1976 /* TwitterUser.swift in Sources */,
+				CE07ABBA23332B8600FB530D /* NSEdgeInsets+easyInit.swift in Sources */,
 				CE934CD62331DFC5005F8869 /* TweetCellView.swift in Sources */,
 				CE381291232D4502005D0218 /* String+parseQueryParameters.swift in Sources */,
 				CE5F00C1232CDDFC002840A4 /* UserAgent.swift in Sources */,

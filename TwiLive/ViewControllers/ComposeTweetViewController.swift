@@ -8,15 +8,54 @@
 
 import Cocoa
 import Alamofire
+import Ikemen
 
 class ComposeTweetViewController: NSViewController {
-    @IBOutlet var textView: NSTextView!
-    @IBOutlet weak var authorizedAccountScreenNameLabel: NSTextField!
-    @IBOutlet weak var tweetButton: NSButton!
+    private let textView = NSTextView() ※ { v in
+        v.isEditable = true
+        v.autoresizingMask = .width
+    }
+    
+    private lazy var textScrollView = NSScrollView() ※ { v in
+        v.snp.makeConstraints { make in
+            make.height.greaterThanOrEqualTo(48)
+        }
+        v.documentView = self.textView
+        v.borderType = .bezelBorder
+        v.hasVerticalScroller = true
+    }
+    
+    private let authorizedAccountScreenNameLabel = TextLabel() ※ { v in
+        v.font = .boldSystemFont(ofSize: NSFont.systemFontSize)
+        v.setContentCompressionResistancePriority(.required, for: .horizontal)
+    }
+    
+    private let tweetButton = NSButton(title: "ツイート", target: self, action: #selector(tweetButtonClicked(_:))) ※ { v in
+        v.keyEquivalent = "\r"
+        v.keyEquivalentModifierMask = .command
+    }
     
     var accessToken: TwitterAuthAccessToken? {
         didSet {
             accessTokenUpdated()
+        }
+    }
+    
+    override func loadView() {
+        view = NSStackView(views: [
+            textScrollView,
+            NSStackView(views: [
+                TextLabel(string: "認証中:") ※ { v in v.setContentCompressionResistancePriority(.required, for: .horizontal) },
+                authorizedAccountScreenNameLabel,
+                SpacerView(),
+                tweetButton,
+            ]) ※ { v in
+                v.setHuggingPriority(.defaultHigh, for: .horizontal)
+            }
+        ]) ※ { v in
+            v.orientation = .vertical
+            v.edgeInsets = .init(all: 16)
+            v.setHuggingPriority(.defaultHigh, for: .horizontal)
         }
     }
     
