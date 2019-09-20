@@ -18,27 +18,20 @@ class TweetCellView: NSTableCellView {
         }
     }
     
-    private let userNameLabel = TextLabel() ※ { v in
-        v.font = .systemFont(ofSize: NSFont.systemFontSize)
-    }
+    private let userNameLabel = TextLabel()
     
     private let userScreenNameLabel = TextLabel() ※ { v in
-        v.font = .systemFont(ofSize: NSFont.systemFontSize)
         v.textColor = .secondaryLabelColor
         v.setContentHuggingPriority(.init(rawValue: 249), for: .horizontal)
     }
     
-    private let createdAtLabel = TextLabel() ※ { v in
-        v.font = .systemFont(ofSize: NSFont.systemFontSize)
-    }
+    private let createdAtLabel = TextLabel()
     
     private let contentLabel = TextLabel() ※ { v in
-        v.font = .systemFont(ofSize: NSFont.systemFontSize)
         v.maximumNumberOfLines = 0
     }
     
     private let sourceLabel = TextLabel() ※ { v in
-        v.font = .systemFont(ofSize: NSFont.systemFontSize)
         v.textColor = .tertiaryLabelColor
         v.lineBreakMode = .byTruncatingTail
     }

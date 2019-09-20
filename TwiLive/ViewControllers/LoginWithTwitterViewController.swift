@@ -100,7 +100,7 @@ class LoginWithTwitterViewController: NSViewController {
         ]) ※ { v in
             v.orientation = .vertical
             v.alignment = .leading
-            v.edgeInsets = .init(top: 20, left: 20, bottom: 20, right: 20)
+            v.edgeInsets = .init(all: 20)
             v.snp.makeConstraints { make in make.width.equalTo(480 + (20 * 2)) }
             v.setHuggingPriority(.required, for: .vertical)
         }
