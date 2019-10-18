@@ -24,6 +24,10 @@
 		CE5F00BE232CDAFB002840A4 /* String+hmacSHA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5F00BD232CDAFB002840A4 /* String+hmacSHA1.swift */; };
 		CE5F00C1232CDDFC002840A4 /* UserAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5F00C0232CDDFC002840A4 /* UserAgent.swift */; };
 		CE7188C6232B640800C34398 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7188C5232B640800C34398 /* TimelineViewController.swift */; };
+		CE885221235979A2006886DA /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE885220235979A2006886DA /* View.swift */; };
+		CE88522323597CDF006886DA /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE88522223597CDF006886DA /* ViewModel.swift */; };
+		CE8852262359A85B006886DA /* NSTextField+stringPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8852252359A85B006886DA /* NSTextField+stringPublisher.swift */; };
+		CE8852282359CB64006886DA /* NSButton+statePublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8852272359CB64006886DA /* NSButton+statePublisher.swift */; };
 		CE934CD423314A9C005F8869 /* VisibleLimitedTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE934CD323314A9C005F8869 /* VisibleLimitedTableView.swift */; };
 		CE934CD62331DFC5005F8869 /* TweetCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE934CD52331DFC5005F8869 /* TweetCellView.swift */; };
 		CE934CD82331F254005F8869 /* TextLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE934CD72331F254005F8869 /* TextLabel.swift */; };
@@ -31,7 +35,7 @@
 		CEA0A500232E5F8A009F1976 /* TwitterUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA0A4FF232E5F8A009F1976 /* TwitterUser.swift */; };
 		CEC2E2D0232BFFA000CF1028 /* StoryboardScenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2E2CE232BFFA000CF1028 /* StoryboardScenes.swift */; };
 		CEC2E2D1232BFFA000CF1028 /* StoryboardSegues.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2E2CF232BFFA000CF1028 /* StoryboardSegues.swift */; };
-		CEC2E2D3232C065F00CF1028 /* LoginWithTwitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2E2D2232C065F00CF1028 /* LoginWithTwitterViewController.swift */; };
+		CEC2E2D3232C065F00CF1028 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2E2D2232C065F00CF1028 /* ViewController.swift */; };
 		CEEDAE422332497F005EBF31 /* SpacerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEDAE412332497F005EBF31 /* SpacerView.swift */; };
 		CEF78A9B232D5840006C6343 /* OAuthSigner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF78A9A232D5840006C6343 /* OAuthSigner.swift */; };
 		CEF78A9D232D5A36006C6343 /* TwitterAuthRequestToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF78A9C232D5A36006C6343 /* TwitterAuthRequestToken.swift */; };
@@ -97,6 +101,10 @@
 		CE5F00BD232CDAFB002840A4 /* String+hmacSHA1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+hmacSHA1.swift"; sourceTree = "<group>"; };
 		CE5F00C0232CDDFC002840A4 /* UserAgent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAgent.swift; sourceTree = "<group>"; };
 		CE7188C5232B640800C34398 /* TimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
+		CE885220235979A2006886DA /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		CE88522223597CDF006886DA /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		CE8852252359A85B006886DA /* NSTextField+stringPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSTextField+stringPublisher.swift"; sourceTree = "<group>"; };
+		CE8852272359CB64006886DA /* NSButton+statePublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSButton+statePublisher.swift"; sourceTree = "<group>"; };
 		CE934CD323314A9C005F8869 /* VisibleLimitedTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisibleLimitedTableView.swift; sourceTree = "<group>"; };
 		CE934CD52331DFC5005F8869 /* TweetCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetCellView.swift; sourceTree = "<group>"; };
 		CE934CD72331F254005F8869 /* TextLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextLabel.swift; sourceTree = "<group>"; };
@@ -105,7 +113,7 @@
 		CEC2E2CA232BFEA300CF1028 /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		CEC2E2CE232BFFA000CF1028 /* StoryboardScenes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardScenes.swift; sourceTree = "<group>"; };
 		CEC2E2CF232BFFA000CF1028 /* StoryboardSegues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardSegues.swift; sourceTree = "<group>"; };
-		CEC2E2D2232C065F00CF1028 /* LoginWithTwitterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithTwitterViewController.swift; sourceTree = "<group>"; };
+		CEC2E2D2232C065F00CF1028 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CEEDAE412332497F005EBF31 /* SpacerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacerView.swift; sourceTree = "<group>"; };
 		CEF78A9A232D5840006C6343 /* OAuthSigner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthSigner.swift; sourceTree = "<group>"; };
 		CEF78A9C232D5A36006C6343 /* TwitterAuthRequestToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterAuthRequestToken.swift; sourceTree = "<group>"; };
@@ -238,7 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				CE5395B92324A54300198A0D /* MainViewController.swift */,
-				CEC2E2D2232C065F00CF1028 /* LoginWithTwitterViewController.swift */,
+				CE88521F2358D77F006886DA /* LoginWithTwitter */,
 				CE7188C5232B640800C34398 /* TimelineViewController.swift */,
 				CEF78AA0232E20AE006C6343 /* ComposeTweetViewController.swift */,
 			);
@@ -257,6 +265,7 @@
 		CE5F0094232CA4BB002840A4 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				CE8852242359A843006886DA /* Combine */,
 				CE5F0095232CA4CC002840A4 /* CharacterSet+rfc3986.swift */,
 				CE381290232D4502005D0218 /* String+parseQueryParameters.swift */,
 				CE5F00BD232CDAFB002840A4 /* String+hmacSHA1.swift */,
@@ -273,6 +282,25 @@
 				CE934CD323314A9C005F8869 /* VisibleLimitedTableView.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		CE88521F2358D77F006886DA /* LoginWithTwitter */ = {
+			isa = PBXGroup;
+			children = (
+				CE885220235979A2006886DA /* View.swift */,
+				CEC2E2D2232C065F00CF1028 /* ViewController.swift */,
+				CE88522223597CDF006886DA /* ViewModel.swift */,
+			);
+			path = LoginWithTwitter;
+			sourceTree = "<group>";
+		};
+		CE8852242359A843006886DA /* Combine */ = {
+			isa = PBXGroup;
+			children = (
+				CE8852252359A85B006886DA /* NSTextField+stringPublisher.swift */,
+				CE8852272359CB64006886DA /* NSButton+statePublisher.swift */,
+			);
+			path = Combine;
 			sourceTree = "<group>";
 		};
 		CEA0A4FC232E5F16009F1976 /* Entity */ = {
@@ -572,14 +600,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE8852282359CB64006886DA /* NSButton+statePublisher.swift in Sources */,
 				CE5395BA2324A54300198A0D /* MainViewController.swift in Sources */,
 				CE07ABBD2333731800FB530D /* MainWindowController.swift in Sources */,
 				CE5395B82324A54300198A0D /* AppDelegate.swift in Sources */,
 				CEF78AA1232E20AE006C6343 /* ComposeTweetViewController.swift in Sources */,
 				CEC2E2D1232BFFA000CF1028 /* StoryboardSegues.swift in Sources */,
+				CE88522323597CDF006886DA /* ViewModel.swift in Sources */,
 				CE7188C6232B640800C34398 /* TimelineViewController.swift in Sources */,
 				CEA0A4FE232E5F27009F1976 /* TwitterStatus.swift in Sources */,
+				CE8852262359A85B006886DA /* NSTextField+stringPublisher.swift in Sources */,
 				CE934CD423314A9C005F8869 /* VisibleLimitedTableView.swift in Sources */,
+				CE885221235979A2006886DA /* View.swift in Sources */,
 				CEF78A9D232D5A36006C6343 /* TwitterAuthRequestToken.swift in Sources */,
 				CEA0A500232E5F8A009F1976 /* TwitterUser.swift in Sources */,
 				CE07ABBA23332B8600FB530D /* NSEdgeInsets+easyInit.swift in Sources */,
@@ -587,7 +619,7 @@
 				CE381291232D4502005D0218 /* String+parseQueryParameters.swift in Sources */,
 				CE5F00C1232CDDFC002840A4 /* UserAgent.swift in Sources */,
 				CE5F0093232C9E8F002840A4 /* TwitterAuthApp.swift in Sources */,
-				CEC2E2D3232C065F00CF1028 /* LoginWithTwitterViewController.swift in Sources */,
+				CEC2E2D3232C065F00CF1028 /* ViewController.swift in Sources */,
 				CEEDAE422332497F005EBF31 /* SpacerView.swift in Sources */,
 				CE5F0096232CA4CC002840A4 /* CharacterSet+rfc3986.swift in Sources */,
 				CE934CD82331F254005F8869 /* TextLabel.swift in Sources */,
