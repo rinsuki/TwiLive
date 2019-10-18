@@ -17,14 +17,10 @@ protocol LoginWithTwitterViewControllerDelegate: class {
 
 class LoginWithTwitterViewController: NSViewController {
 
-    weak var delegate: LoginWithTwitterViewControllerDelegate?
     let viewModel = LoginWithTwitterViewModel()
-    
-    private var progressIndicatorCancellable: AnyCancellable!
-    private var refreshUrlButtonCancellable: AnyCancellable!
-    private var authorizeUrlFieldCancellable: AnyCancellable!
-    
     var disposeBag: Set<AnyCancellable> = []
+
+    weak var delegate: LoginWithTwitterViewControllerDelegate?
     
     override func loadView() {
         let view = LoginWithTwitterView()
@@ -157,11 +153,7 @@ class LoginWithTwitterViewController: NSViewController {
         NSApplication.shared.terminate(self)
     }
     
-    @IBAction func refreshUrlButtonClicked(_ sender: Any) {
-//        getRequestToken()
-    }
-    
-    func finishAuthorize(_ token: TwitterAuthAccessToken) {
+    private func finishAuthorize(_ token: TwitterAuthAccessToken) {
         self.dismiss(self)
         self.delegate?.didFinishAuthorize(token: token)
     }
