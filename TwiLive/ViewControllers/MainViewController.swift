@@ -7,12 +7,13 @@
 //
 
 import Cocoa
-import SwiftUI
 
 class MainViewController: NSSplitViewController {
     var accessToken: TwitterAuthAccessToken?
     let timelineVC = TimelineViewController()
     let composeTweetVC = ComposeTweetViewController()
+    
+    var isFirstAppear = true
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +25,7 @@ class MainViewController: NSSplitViewController {
     }
     
     override func viewDidAppear() {
+        isFirstAppear = false
         let authorizeSheet = LoginWithTwitterViewController()
         authorizeSheet.delegate = self
         presentAsSheet(authorizeSheet)
