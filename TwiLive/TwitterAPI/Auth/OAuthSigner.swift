@@ -57,6 +57,7 @@ struct OAuthSigner {
                 .map { "\($0.key)=\($0.value.addingPercentEncoding(withAllowedCharacters: .rfc3986)!)"}
                 .joined(separator: "&")
             if method == .get {
+                print(paramsString)
                 var components = URLComponents(url: url, resolvingAgainstBaseURL: false)!
                 components.query = paramsString
                 request.url = components.url

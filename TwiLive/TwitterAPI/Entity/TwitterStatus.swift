@@ -8,11 +8,16 @@
 
 import Foundation
 
+struct SubStatus: Codable {
+    
+}
+
 struct TwitterStatus: Codable {
     var id: Int64
     var source: String
     var user: TwitterUser
     var text: String
+    var retweetedStatus: SubStatus?
     
     var createdAt: Date
     
@@ -20,7 +25,8 @@ struct TwitterStatus: Codable {
         case id
         case source
         case user
-        case text = "full_text"
+        case text
+        case retweetedStatus = "retweeted_status"
         case createdAt = "created_at"
     }
 }

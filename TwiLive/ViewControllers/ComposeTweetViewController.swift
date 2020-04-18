@@ -80,7 +80,7 @@ class ComposeTweetViewController: NSViewController {
         guard let token = accessToken else { return }
         AF.request(token.signer.signedRequest(
             .post, url: URL(string: "https://api.twitter.com/1.1/statuses/update.json")!,
-            params: ["status": textView.string]
+            params: ["status": textView.string + " #MU2020"]
         )).responseJSON { [unowned self] res in
             switch res.result {
             case .success(let status):

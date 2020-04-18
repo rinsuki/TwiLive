@@ -17,6 +17,7 @@
 		CE06F5E0244B059D00CF3AF7 /* Dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE06F5DF244B059D00CF3AF7 /* Dummy.swift */; };
 		CE06F5E8244B0DF200CF3AF7 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = CE06F5E7244B0DF200CF3AF7 /* KeychainAccess */; };
 		CE06F5EA244B0E0300CF3AF7 /* Regex in Frameworks */ = {isa = PBXBuildFile; productRef = CE06F5E9244B0E0300CF3AF7 /* Regex */; };
+		CE06F5EC244B25F300CF3AF7 /* TwitterSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE06F5EB244B25F300CF3AF7 /* TwitterSearchResult.swift */; };
 		CE07ABBA23332B8600FB530D /* NSEdgeInsets+easyInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE07ABB923332B8600FB530D /* NSEdgeInsets+easyInit.swift */; };
 		CE07ABBD2333731800FB530D /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE07ABBC2333731800FB530D /* MainWindowController.swift */; };
 		CE381291232D4502005D0218 /* String+parseQueryParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE381290232D4502005D0218 /* String+parseQueryParameters.swift */; };
@@ -93,6 +94,7 @@
 		7C89308E708B2FA03ACE5CC4 /* Pods-TwiLive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwiLive.release.xcconfig"; path = "Target Support Files/Pods-TwiLive/Pods-TwiLive.release.xcconfig"; sourceTree = "<group>"; };
 		CE06F5C2244AFDBD00CF3AF7 /* libTwiLiveThirdLibraries.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libTwiLiveThirdLibraries.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE06F5DF244B059D00CF3AF7 /* Dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dummy.swift; sourceTree = "<group>"; };
+		CE06F5EB244B25F300CF3AF7 /* TwitterSearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterSearchResult.swift; sourceTree = "<group>"; };
 		CE07ABB923332B8600FB530D /* NSEdgeInsets+easyInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSEdgeInsets+easyInit.swift"; sourceTree = "<group>"; };
 		CE07ABBC2333731800FB530D /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
 		CE381290232D4502005D0218 /* String+parseQueryParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+parseQueryParameters.swift"; sourceTree = "<group>"; };
@@ -335,6 +337,7 @@
 			children = (
 				CEA0A4FD232E5F27009F1976 /* TwitterStatus.swift */,
 				CEA0A4FF232E5F8A009F1976 /* TwitterUser.swift */,
+				CE06F5EB244B25F300CF3AF7 /* TwitterSearchResult.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -626,6 +629,7 @@
 				CE5395BA2324A54300198A0D /* MainViewController.swift in Sources */,
 				CE07ABBD2333731800FB530D /* MainWindowController.swift in Sources */,
 				CE5395B82324A54300198A0D /* AppDelegate.swift in Sources */,
+				CE06F5EC244B25F300CF3AF7 /* TwitterSearchResult.swift in Sources */,
 				CEF78AA1232E20AE006C6343 /* ComposeTweetViewController.swift in Sources */,
 				CEC2E2D1232BFFA000CF1028 /* StoryboardSegues.swift in Sources */,
 				CE88522323597CDF006886DA /* ViewModel.swift in Sources */,

@@ -9,7 +9,7 @@
 import Cocoa
 import KeychainAccess
 
-fileprivate let keychain = Keychain(service: "com.twitter.oauth")
+fileprivate let keychain = Keychain(service: "net.rinsuki.apps.mac.TwiLive.keychain")
 fileprivate let jsonEncoder = JSONEncoder()
 fileprivate let jsonDecoder = JSONDecoder()
 
@@ -20,9 +20,9 @@ class MainViewController: NSSplitViewController {
             composeTweetVC.accessToken = accessToken
             if let token = accessToken {
                 let data = try! JSONEncoder().encode(token)
-                keychain[data: "accessToken"] = data
+                keychain[data: "twitter.accessToken"] = data
             } else {
-                try! keychain.remove("accessToken")
+                try! keychain.remove("twitter.accessToken")
             }
         }
     }
@@ -39,7 +39,7 @@ class MainViewController: NSSplitViewController {
         addSplitViewItem(.init(viewController: timelineVC))
         addSplitViewItem(.init(viewController: composeTweetVC))
         
-        if  let data = keychain[data: "accessToken"],
+        if  let data = keychain[data: "twitter.accessToken"],
             let token = try? jsonDecoder.decode(TwitterAuthAccessToken.self, from: data) {
             accessToken = token
         }
