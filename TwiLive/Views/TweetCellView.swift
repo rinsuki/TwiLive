@@ -11,6 +11,11 @@ import Ikemen
 import SnapKit
 import Nuke
 
+fileprivate let formatter = DateFormatter() ※ { f in
+    f.locale = .init(identifier: "en_US_POSIX")
+    f.dateFormat = "HH:mm:ss"
+}
+
 class TweetCellView: NSTableCellView {
     private let iconView = NSImageView() ※ { v in
         v.snp.makeConstraints { make in
@@ -77,7 +82,7 @@ class TweetCellView: NSTableCellView {
     func load(_ tweet: TwitterStatus) {
         userNameLabel.stringValue = tweet.user.name
         userScreenNameLabel.stringValue = "@" + tweet.user.screenName
-        createdAtLabel.stringValue = "00:00:00"
+        createdAtLabel.stringValue = formatter.string(from: tweet.createdAt)
         contentLabel.stringValue = tweet.text
         sourceLabel.stringValue = tweet.source
         Nuke.loadImage(with: URL(string: tweet.user.profileImageURL.replacingOccurrences(of: "_normal", with: "_400x400"))!, into: iconView)
