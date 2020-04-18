@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct TwitterAuthAccessToken {
+struct TwitterAuthAccessToken: Codable {
     var app: TwitterAuthApp
     var token: String
     var tokenSecret: String

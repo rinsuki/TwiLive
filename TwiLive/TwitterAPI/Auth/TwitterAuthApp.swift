@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct TwitterAuthApp {
+struct TwitterAuthApp: Codable {
     // 下の一行は馬鹿にしか見えない
     static let `default` = TwitterAuthApp(appKey: "IR9S1FO7yEbpwnPz9nJVpJekX", appSecret: "BxnFDzhGNrd2JWf8eBkR1hBONAcgEptGKlM5w91hNErCQgSxs0")
 

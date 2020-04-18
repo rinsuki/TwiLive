@@ -10,6 +10,7 @@ import Cocoa
 import Ikemen
 import SnapKit
 import Nuke
+import HTMLEntities
 
 fileprivate let formatter = DateFormatter() ※ { f in
     f.locale = .init(identifier: "en_US_POSIX")

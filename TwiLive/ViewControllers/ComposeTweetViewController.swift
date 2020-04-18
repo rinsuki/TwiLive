@@ -78,7 +78,7 @@ class ComposeTweetViewController: NSViewController {
     
     @IBAction func tweetButtonClicked(_ sender: Any) {
         guard let token = accessToken else { return }
-        Alamofire.request(token.signer.signedRequest(
+        AF.request(token.signer.signedRequest(
             .post, url: URL(string: "https://api.twitter.com/1.1/statuses/update.json")!,
             params: ["status": textView.string]
         )).responseJSON { [unowned self] res in

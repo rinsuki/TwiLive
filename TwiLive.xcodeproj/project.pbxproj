@@ -3,13 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B46BAC2FA6EF8CABCA87B4D /* Pods_TwiLiveTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E20E2CA7FCEF75A738EA7E42 /* Pods_TwiLiveTests.framework */; };
-		40DDB23ECB1F85CB6BA5BDF1 /* Pods_TwiLive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6DA07AC21582C5F93E9437C /* Pods_TwiLive.framework */; };
-		6B683ECFFFFCA4FAEBF322F4 /* Pods_TwiLive_TwiLiveUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6059F317883561FB8F9A403 /* Pods_TwiLive_TwiLiveUITests.framework */; };
+		A432B5500D2D58858DCAF639 /* Pods_TwiLive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDBB449F24E4EEC2446D2FD1 /* Pods_TwiLive.framework */; };
+		CE06F5CC244AFDC900CF3AF7 /* HTMLEntities in Frameworks */ = {isa = PBXBuildFile; productRef = CE06F5CB244AFDC900CF3AF7 /* HTMLEntities */; };
+		CE06F5CF244AFDDE00CF3AF7 /* libTwiLiveThirdLibraries.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CE06F5C2244AFDBD00CF3AF7 /* libTwiLiveThirdLibraries.dylib */; };
+		CE06F5D0244AFDDE00CF3AF7 /* libTwiLiveThirdLibraries.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE06F5C2244AFDBD00CF3AF7 /* libTwiLiveThirdLibraries.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		CE06F5D5244AFE3300CF3AF7 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = CE06F5D4244AFE3300CF3AF7 /* SnapKit */; };
+		CE06F5D8244AFE8A00CF3AF7 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = CE06F5D7244AFE8A00CF3AF7 /* Nuke */; };
+		CE06F5DB244AFEC500CF3AF7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CE06F5DA244AFEC500CF3AF7 /* Alamofire */; };
+		CE06F5E0244B059D00CF3AF7 /* Dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE06F5DF244B059D00CF3AF7 /* Dummy.swift */; };
+		CE06F5E8244B0DF200CF3AF7 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = CE06F5E7244B0DF200CF3AF7 /* KeychainAccess */; };
+		CE06F5EA244B0E0300CF3AF7 /* Regex in Frameworks */ = {isa = PBXBuildFile; productRef = CE06F5E9244B0E0300CF3AF7 /* Regex */; };
 		CE07ABBA23332B8600FB530D /* NSEdgeInsets+easyInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE07ABB923332B8600FB530D /* NSEdgeInsets+easyInit.swift */; };
 		CE07ABBD2333731800FB530D /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE07ABBC2333731800FB530D /* MainWindowController.swift */; };
 		CE381291232D4502005D0218 /* String+parseQueryParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE381290232D4502005D0218 /* String+parseQueryParameters.swift */; };
@@ -44,6 +51,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		CE06F5D1244AFDDE00CF3AF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE5395AC2324A54300198A0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE06F5C1244AFDBD00CF3AF7;
+			remoteInfo = TwiLiveThirdLibraries;
+		};
 		CE5395C72324A54500198A0D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CE5395AC2324A54300198A0D /* Project object */;
@@ -67,6 +81,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				CE06F5D0244AFDDE00CF3AF7 /* libTwiLiveThirdLibraries.dylib in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,12 +89,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4B40F16559649E985C642666 /* Pods-TwiLive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwiLive.release.xcconfig"; path = "Target Support Files/Pods-TwiLive/Pods-TwiLive.release.xcconfig"; sourceTree = "<group>"; };
-		5BEF45094990E42E9281602C /* Pods-TwiLiveTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwiLiveTests.debug.xcconfig"; path = "Target Support Files/Pods-TwiLiveTests/Pods-TwiLiveTests.debug.xcconfig"; sourceTree = "<group>"; };
-		7397C84524F922FCA01477C6 /* Pods-TwiLive-TwiLiveUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwiLive-TwiLiveUITests.debug.xcconfig"; path = "Target Support Files/Pods-TwiLive-TwiLiveUITests/Pods-TwiLive-TwiLiveUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		A411C0F61DDC63ED37869FF1 /* Pods-TwiLiveTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwiLiveTests.release.xcconfig"; path = "Target Support Files/Pods-TwiLiveTests/Pods-TwiLiveTests.release.xcconfig"; sourceTree = "<group>"; };
-		BD22A9CC2E5011BE8477E09D /* Pods-TwiLive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwiLive.debug.xcconfig"; path = "Target Support Files/Pods-TwiLive/Pods-TwiLive.debug.xcconfig"; sourceTree = "<group>"; };
-		C6DA07AC21582C5F93E9437C /* Pods_TwiLive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwiLive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E8D5511680343F783E69656 /* Pods-TwiLive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwiLive.debug.xcconfig"; path = "Target Support Files/Pods-TwiLive/Pods-TwiLive.debug.xcconfig"; sourceTree = "<group>"; };
+		7C89308E708B2FA03ACE5CC4 /* Pods-TwiLive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwiLive.release.xcconfig"; path = "Target Support Files/Pods-TwiLive/Pods-TwiLive.release.xcconfig"; sourceTree = "<group>"; };
+		CE06F5C2244AFDBD00CF3AF7 /* libTwiLiveThirdLibraries.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libTwiLiveThirdLibraries.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE06F5DF244B059D00CF3AF7 /* Dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dummy.swift; sourceTree = "<group>"; };
 		CE07ABB923332B8600FB530D /* NSEdgeInsets+easyInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSEdgeInsets+easyInit.swift"; sourceTree = "<group>"; };
 		CE07ABBC2333731800FB530D /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
 		CE381290232D4502005D0218 /* String+parseQueryParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+parseQueryParameters.swift"; sourceTree = "<group>"; };
@@ -119,17 +132,29 @@
 		CEF78A9C232D5A36006C6343 /* TwitterAuthRequestToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterAuthRequestToken.swift; sourceTree = "<group>"; };
 		CEF78A9E232DE1B3006C6343 /* TwitterAuthAccessToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterAuthAccessToken.swift; sourceTree = "<group>"; };
 		CEF78AA0232E20AE006C6343 /* ComposeTweetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeTweetViewController.swift; sourceTree = "<group>"; };
-		D2AE144EEF47418CE6B42144 /* Pods-TwiLive-TwiLiveUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwiLive-TwiLiveUITests.release.xcconfig"; path = "Target Support Files/Pods-TwiLive-TwiLiveUITests/Pods-TwiLive-TwiLiveUITests.release.xcconfig"; sourceTree = "<group>"; };
-		E20E2CA7FCEF75A738EA7E42 /* Pods_TwiLiveTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwiLiveTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F6059F317883561FB8F9A403 /* Pods_TwiLive_TwiLiveUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwiLive_TwiLiveUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDBB449F24E4EEC2446D2FD1 /* Pods_TwiLive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwiLive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CE06F5C0244AFDBD00CF3AF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE06F5EA244B0E0300CF3AF7 /* Regex in Frameworks */,
+				CE06F5D8244AFE8A00CF3AF7 /* Nuke in Frameworks */,
+				CE06F5DB244AFEC500CF3AF7 /* Alamofire in Frameworks */,
+				CE06F5CC244AFDC900CF3AF7 /* HTMLEntities in Frameworks */,
+				CE06F5D5244AFE3300CF3AF7 /* SnapKit in Frameworks */,
+				CE06F5E8244B0DF200CF3AF7 /* KeychainAccess in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CE5395B12324A54300198A0D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40DDB23ECB1F85CB6BA5BDF1 /* Pods_TwiLive.framework in Frameworks */,
+				CE06F5CF244AFDDE00CF3AF7 /* libTwiLiveThirdLibraries.dylib in Frameworks */,
+				A432B5500D2D58858DCAF639 /* Pods_TwiLive.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +162,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B46BAC2FA6EF8CABCA87B4D /* Pods_TwiLiveTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,7 +169,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B683ECFFFFCA4FAEBF322F4 /* Pods_TwiLive_TwiLiveUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,9 +178,7 @@
 		1F5E9B3C3C32D3D7F356EE53 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C6DA07AC21582C5F93E9437C /* Pods_TwiLive.framework */,
-				F6059F317883561FB8F9A403 /* Pods_TwiLive_TwiLiveUITests.framework */,
-				E20E2CA7FCEF75A738EA7E42 /* Pods_TwiLiveTests.framework */,
+				EDBB449F24E4EEC2446D2FD1 /* Pods_TwiLive.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -165,14 +186,18 @@
 		CDC15865CAF7B59E2AEE75AC /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				BD22A9CC2E5011BE8477E09D /* Pods-TwiLive.debug.xcconfig */,
-				4B40F16559649E985C642666 /* Pods-TwiLive.release.xcconfig */,
-				7397C84524F922FCA01477C6 /* Pods-TwiLive-TwiLiveUITests.debug.xcconfig */,
-				D2AE144EEF47418CE6B42144 /* Pods-TwiLive-TwiLiveUITests.release.xcconfig */,
-				5BEF45094990E42E9281602C /* Pods-TwiLiveTests.debug.xcconfig */,
-				A411C0F61DDC63ED37869FF1 /* Pods-TwiLiveTests.release.xcconfig */,
+				1E8D5511680343F783E69656 /* Pods-TwiLive.debug.xcconfig */,
+				7C89308E708B2FA03ACE5CC4 /* Pods-TwiLive.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		CE06F5C3244AFDBD00CF3AF7 /* TwiLiveThirdLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				CE06F5DF244B059D00CF3AF7 /* Dummy.swift */,
+			);
+			path = TwiLiveThirdLibraries;
 			sourceTree = "<group>";
 		};
 		CE07ABBB233371FF00FB530D /* WindowControllers */ = {
@@ -190,6 +215,7 @@
 				CE5395B62324A54300198A0D /* TwiLive */,
 				CE5395C92324A54500198A0D /* TwiLiveTests */,
 				CE5395D42324A54500198A0D /* TwiLiveUITests */,
+				CE06F5C3244AFDBD00CF3AF7 /* TwiLiveThirdLibraries */,
 				CE5395B52324A54300198A0D /* Products */,
 				CDC15865CAF7B59E2AEE75AC /* Pods */,
 				1F5E9B3C3C32D3D7F356EE53 /* Frameworks */,
@@ -202,6 +228,7 @@
 				CE5395B42324A54300198A0D /* TwiLive.app */,
 				CE5395C62324A54500198A0D /* TwiLiveTests.xctest */,
 				CE5395D12324A54500198A0D /* TwiLiveUITests.xctest */,
+				CE06F5C2244AFDBD00CF3AF7 /* libTwiLiveThirdLibraries.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -344,24 +371,62 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		CE06F5BE244AFDBD00CF3AF7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		CE5395B32324A54300198A0D /* TwiLive */ = {
+		CE06F5C1244AFDBD00CF3AF7 /* TwiLiveThirdLibraries */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CE5395DA2324A54500198A0D /* Build configuration list for PBXNativeTarget "TwiLive" */;
+			buildConfigurationList = CE06F5C8244AFDBD00CF3AF7 /* Build configuration list for PBXNativeTarget "TwiLiveThirdLibraries" */;
 			buildPhases = (
-				D377B240BCF0D6359DFBB1B4 /* [CP] Check Pods Manifest.lock */,
-				CEC2E2CC232BFF2A00CF1028 /* SwiftGen */,
-				CE5395B02324A54300198A0D /* Sources */,
-				CE5395B12324A54300198A0D /* Frameworks */,
-				CE5395B22324A54300198A0D /* Resources */,
-				CE5F00B6232CC01C002840A4 /* Embed Frameworks */,
-				770B8AE029E8953B361567D0 /* [CP] Embed Pods Frameworks */,
+				CE06F5BE244AFDBD00CF3AF7 /* Headers */,
+				CE06F5BF244AFDBD00CF3AF7 /* Sources */,
+				CE06F5C0244AFDBD00CF3AF7 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
+			name = TwiLiveThirdLibraries;
+			packageProductDependencies = (
+				CE06F5CB244AFDC900CF3AF7 /* HTMLEntities */,
+				CE06F5D4244AFE3300CF3AF7 /* SnapKit */,
+				CE06F5D7244AFE8A00CF3AF7 /* Nuke */,
+				CE06F5DA244AFEC500CF3AF7 /* Alamofire */,
+				CE06F5E7244B0DF200CF3AF7 /* KeychainAccess */,
+				CE06F5E9244B0E0300CF3AF7 /* Regex */,
+			);
+			productName = TwiLiveThirdLibraries;
+			productReference = CE06F5C2244AFDBD00CF3AF7 /* libTwiLiveThirdLibraries.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		CE5395B32324A54300198A0D /* TwiLive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE5395DA2324A54500198A0D /* Build configuration list for PBXNativeTarget "TwiLive" */;
+			buildPhases = (
+				D8D1FB7B0A126CFFC63AD1CE /* [CP] Check Pods Manifest.lock */,
+				CEC2E2CC232BFF2A00CF1028 /* SwiftGen */,
+				CE5395B02324A54300198A0D /* Sources */,
+				CE5395B12324A54300198A0D /* Frameworks */,
+				CE5395B22324A54300198A0D /* Resources */,
+				CE5F00B6232CC01C002840A4 /* Embed Frameworks */,
+				074A958722C707C0070E27E4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE06F5D2244AFDDE00CF3AF7 /* PBXTargetDependency */,
+			);
 			name = TwiLive;
+			packageProductDependencies = (
+			);
 			productName = TwiLive;
 			productReference = CE5395B42324A54300198A0D /* TwiLive.app */;
 			productType = "com.apple.product-type.application";
@@ -370,7 +435,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE5395DD2324A54500198A0D /* Build configuration list for PBXNativeTarget "TwiLiveTests" */;
 			buildPhases = (
-				4950FC12EFFF7635BD2DC1F0 /* [CP] Check Pods Manifest.lock */,
 				CE5395C22324A54500198A0D /* Sources */,
 				CE5395C32324A54500198A0D /* Frameworks */,
 				CE5395C42324A54500198A0D /* Resources */,
@@ -389,11 +453,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE5395E02324A54500198A0D /* Build configuration list for PBXNativeTarget "TwiLiveUITests" */;
 			buildPhases = (
-				1CD683F09FCC890D00421B57 /* [CP] Check Pods Manifest.lock */,
 				CE5395CD2324A54500198A0D /* Sources */,
 				CE5395CE2324A54500198A0D /* Frameworks */,
 				CE5395CF2324A54500198A0D /* Resources */,
-				0D15BEB90DBAA3F3B3F01ABA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -415,6 +477,10 @@
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = rinsuki;
 				TargetAttributes = {
+					CE06F5C1244AFDBD00CF3AF7 = {
+						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
+					};
 					CE5395B32324A54300198A0D = {
 						CreatedOnToolsVersion = 11.0;
 					};
@@ -437,6 +503,14 @@
 				Base,
 			);
 			mainGroup = CE5395AB2324A54300198A0D;
+			packageReferences = (
+				CE06F5BB244AFBA400CF3AF7 /* XCRemoteSwiftPackageReference "swift-html-entities" */,
+				CE06F5D3244AFE3300CF3AF7 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				CE06F5D6244AFE8A00CF3AF7 /* XCRemoteSwiftPackageReference "Nuke" */,
+				CE06F5D9244AFEC500CF3AF7 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				CE06F5E1244B08DD00CF3AF7 /* XCRemoteSwiftPackageReference "Regex" */,
+				CE06F5E4244B0DEA00CF3AF7 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+			);
 			productRefGroup = CE5395B52324A54300198A0D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -444,6 +518,7 @@
 				CE5395B32324A54300198A0D /* TwiLive */,
 				CE5395C52324A54500198A0D /* TwiLiveTests */,
 				CE5395D02324A54500198A0D /* TwiLiveUITests */,
+				CE06F5C1244AFDBD00CF3AF7 /* TwiLiveThirdLibraries */,
 			);
 		};
 /* End PBXProject section */
@@ -475,68 +550,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0D15BEB90DBAA3F3B3F01ABA /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TwiLive-TwiLiveUITests/Pods-TwiLive-TwiLiveUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TwiLive-TwiLiveUITests/Pods-TwiLive-TwiLiveUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TwiLive-TwiLiveUITests/Pods-TwiLive-TwiLiveUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1CD683F09FCC890D00421B57 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TwiLive-TwiLiveUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4950FC12EFFF7635BD2DC1F0 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TwiLiveTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		770B8AE029E8953B361567D0 /* [CP] Embed Pods Frameworks */ = {
+		074A958722C707C0070E27E4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -571,7 +585,7 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/SwiftGen/bin/swiftgen\"\n";
 		};
-		D377B240BCF0D6359DFBB1B4 /* [CP] Check Pods Manifest.lock */ = {
+		D8D1FB7B0A126CFFC63AD1CE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -596,6 +610,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CE06F5BF244AFDBD00CF3AF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE06F5E0244B059D00CF3AF7 /* Dummy.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CE5395B02324A54300198A0D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -649,6 +671,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		CE06F5D2244AFDDE00CF3AF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE06F5C1244AFDBD00CF3AF7 /* TwiLiveThirdLibraries */;
+			targetProxy = CE06F5D1244AFDDE00CF3AF7 /* PBXContainerItemProxy */;
+		};
 		CE5395C82324A54500198A0D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CE5395B32324A54300198A0D /* TwiLive */;
@@ -673,6 +700,49 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		CE06F5C9244AFDBD00CF3AF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4XKKKM86RN;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CE06F5CA244AFDBD00CF3AF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4XKKKM86RN;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		CE5395D82324A54500198A0D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -788,7 +858,7 @@
 		};
 		CE5395DB2324A54500198A0D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BD22A9CC2E5011BE8477E09D /* Pods-TwiLive.debug.xcconfig */;
+			baseConfigurationReference = 1E8D5511680343F783E69656 /* Pods-TwiLive.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -810,7 +880,7 @@
 		};
 		CE5395DC2324A54500198A0D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4B40F16559649E985C642666 /* Pods-TwiLive.release.xcconfig */;
+			baseConfigurationReference = 7C89308E708B2FA03ACE5CC4 /* Pods-TwiLive.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -832,7 +902,6 @@
 		};
 		CE5395DE2324A54500198A0D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5BEF45094990E42E9281602C /* Pods-TwiLiveTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -855,7 +924,6 @@
 		};
 		CE5395DF2324A54500198A0D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A411C0F61DDC63ED37869FF1 /* Pods-TwiLiveTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -878,7 +946,6 @@
 		};
 		CE5395E12324A54500198A0D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7397C84524F922FCA01477C6 /* Pods-TwiLive-TwiLiveUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -899,7 +966,6 @@
 		};
 		CE5395E22324A54500198A0D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D2AE144EEF47418CE6B42144 /* Pods-TwiLive-TwiLiveUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -921,6 +987,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CE06F5C8244AFDBD00CF3AF7 /* Build configuration list for PBXNativeTarget "TwiLiveThirdLibraries" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE06F5C9244AFDBD00CF3AF7 /* Debug */,
+				CE06F5CA244AFDBD00CF3AF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CE5395AF2324A54300198A0D /* Build configuration list for PBXProject "TwiLive" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -958,6 +1033,90 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CE06F5BB244AFBA400CF3AF7 /* XCRemoteSwiftPackageReference "swift-html-entities" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/IBM-Swift/swift-html-entities";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.14;
+			};
+		};
+		CE06F5D3244AFE3300CF3AF7 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+		CE06F5D6244AFE8A00CF3AF7 /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.4.1;
+			};
+		};
+		CE06F5D9244AFEC500CF3AF7 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+		CE06F5E1244B08DD00CF3AF7 /* XCRemoteSwiftPackageReference "Regex" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sharplet/Regex";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.1;
+			};
+		};
+		CE06F5E4244B0DEA00CF3AF7 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE06F5CB244AFDC900CF3AF7 /* HTMLEntities */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE06F5BB244AFBA400CF3AF7 /* XCRemoteSwiftPackageReference "swift-html-entities" */;
+			productName = HTMLEntities;
+		};
+		CE06F5D4244AFE3300CF3AF7 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE06F5D3244AFE3300CF3AF7 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		CE06F5D7244AFE8A00CF3AF7 /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE06F5D6244AFE8A00CF3AF7 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+		CE06F5DA244AFEC500CF3AF7 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE06F5D9244AFEC500CF3AF7 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		CE06F5E7244B0DF200CF3AF7 /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE06F5E4244B0DEA00CF3AF7 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+		CE06F5E9244B0E0300CF3AF7 /* Regex */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE06F5E1244B08DD00CF3AF7 /* XCRemoteSwiftPackageReference "Regex" */;
+			productName = Regex;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CE5395AC2324A54300198A0D /* Project object */;
 }

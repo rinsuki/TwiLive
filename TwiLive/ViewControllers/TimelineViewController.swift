@@ -47,7 +47,7 @@ class TimelineViewController: NSViewController {
             .get, url: URL(string: "https://api.twitter.com/1.1/statuses/home_timeline.json")!,
             params: ["tweet_mode": "extended"]
         )
-        Alamofire.request(request).responseData { [unowned self] res in
+        AF.request(request).responseData { [unowned self] res in
             switch res.result {
             case .success(let data):
                 let decoder = JSONDecoder()
