@@ -1,7 +1,0 @@
-ib:
-  inputs: ./TwiLive/
-  outputs:
-    - templateName: scenes-swift4
-      output: TwiLive/Generated/StoryboardScenes.swift
-    - templateName: segues-swift4
-      output: TwiLive/Generated/StoryboardSegues.swift

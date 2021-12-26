@@ -59,7 +59,7 @@ struct OAuthSigner {
             if method == .get {
                 print(paramsString)
                 var components = URLComponents(url: url, resolvingAgainstBaseURL: false)!
-                components.query = paramsString
+                components.percentEncodedQuery = paramsString
                 request.url = components.url
             } else {
                 let paramsData = paramsString.data(using: .utf8)!
@@ -70,6 +70,10 @@ struct OAuthSigner {
         request.addValue(UserAgent, forHTTPHeaderField: "User-Agent")
         request.addValue("OAuth " + header, forHTTPHeaderField: "Authorization")
         return request
-        
+    }
+    
+    func data(_ method: HTTPMethod, url: URL, params: [String: String]) async throws -> (Data, URLResponse) {
+        let request = signedRequest(method, url: url, params: params)
+        return try await URLSession.shared.data(for: request)
     }
 }

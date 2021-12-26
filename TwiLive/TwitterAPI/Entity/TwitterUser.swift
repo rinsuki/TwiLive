@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct TwitterUser: Codable {
+struct TwitterUser: Codable, Hashable {
     var id: Int64
     var name: String
     var screenName: String

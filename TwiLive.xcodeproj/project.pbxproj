@@ -7,48 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A432B5500D2D58858DCAF639 /* Pods_TwiLive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDBB449F24E4EEC2446D2FD1 /* Pods_TwiLive.framework */; };
+		CE0522002777ED9C003B036E /* introspectWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0521FF2777ED9C003B036E /* introspectWindow.swift */; };
+		CE0522022777EDFF003B036E /* introspectSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0522012777EDFF003B036E /* introspectSplitViewController.swift */; };
+		CE0522042777F673003B036E /* ChangeHashtagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0522032777F673003B036E /* ChangeHashtagView.swift */; };
+		CE0522062777FC2C003B036E /* TimelineStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0522052777FC2C003B036E /* TimelineStore.swift */; };
+		CE052209277844D9003B036E /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = CE052208277844D9003B036E /* NukeUI */; };
 		CE06F5CC244AFDC900CF3AF7 /* HTMLEntities in Frameworks */ = {isa = PBXBuildFile; productRef = CE06F5CB244AFDC900CF3AF7 /* HTMLEntities */; };
 		CE06F5CF244AFDDE00CF3AF7 /* libTwiLiveThirdLibraries.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CE06F5C2244AFDBD00CF3AF7 /* libTwiLiveThirdLibraries.dylib */; };
 		CE06F5D0244AFDDE00CF3AF7 /* libTwiLiveThirdLibraries.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE06F5C2244AFDBD00CF3AF7 /* libTwiLiveThirdLibraries.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		CE06F5D5244AFE3300CF3AF7 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = CE06F5D4244AFE3300CF3AF7 /* SnapKit */; };
-		CE06F5D8244AFE8A00CF3AF7 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = CE06F5D7244AFE8A00CF3AF7 /* Nuke */; };
 		CE06F5DB244AFEC500CF3AF7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CE06F5DA244AFEC500CF3AF7 /* Alamofire */; };
 		CE06F5E0244B059D00CF3AF7 /* Dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE06F5DF244B059D00CF3AF7 /* Dummy.swift */; };
 		CE06F5E8244B0DF200CF3AF7 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = CE06F5E7244B0DF200CF3AF7 /* KeychainAccess */; };
 		CE06F5EA244B0E0300CF3AF7 /* Regex in Frameworks */ = {isa = PBXBuildFile; productRef = CE06F5E9244B0E0300CF3AF7 /* Regex */; };
 		CE06F5EC244B25F300CF3AF7 /* TwitterSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE06F5EB244B25F300CF3AF7 /* TwitterSearchResult.swift */; };
-		CE07ABBA23332B8600FB530D /* NSEdgeInsets+easyInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE07ABB923332B8600FB530D /* NSEdgeInsets+easyInit.swift */; };
-		CE07ABBD2333731800FB530D /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE07ABBC2333731800FB530D /* MainWindowController.swift */; };
 		CE381291232D4502005D0218 /* String+parseQueryParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE381290232D4502005D0218 /* String+parseQueryParameters.swift */; };
-		CE5395B82324A54300198A0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5395B72324A54300198A0D /* AppDelegate.swift */; };
-		CE5395BA2324A54300198A0D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5395B92324A54300198A0D /* MainViewController.swift */; };
 		CE5395BC2324A54500198A0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5395BB2324A54500198A0D /* Assets.xcassets */; };
-		CE5395BF2324A54500198A0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5395BD2324A54500198A0D /* Main.storyboard */; };
 		CE5395CB2324A54500198A0D /* TwiLiveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5395CA2324A54500198A0D /* TwiLiveTests.swift */; };
 		CE5395D62324A54500198A0D /* TwiLiveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5395D52324A54500198A0D /* TwiLiveUITests.swift */; };
 		CE5F0093232C9E8F002840A4 /* TwitterAuthApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5F0092232C9E8F002840A4 /* TwitterAuthApp.swift */; };
 		CE5F0096232CA4CC002840A4 /* CharacterSet+rfc3986.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5F0095232CA4CC002840A4 /* CharacterSet+rfc3986.swift */; };
 		CE5F00BE232CDAFB002840A4 /* String+hmacSHA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5F00BD232CDAFB002840A4 /* String+hmacSHA1.swift */; };
 		CE5F00C1232CDDFC002840A4 /* UserAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5F00C0232CDDFC002840A4 /* UserAgent.swift */; };
-		CE7188C6232B640800C34398 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7188C5232B640800C34398 /* TimelineViewController.swift */; };
-		CE885221235979A2006886DA /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE885220235979A2006886DA /* View.swift */; };
-		CE88522323597CDF006886DA /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE88522223597CDF006886DA /* ViewModel.swift */; };
-		CE8852262359A85B006886DA /* NSTextField+stringPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8852252359A85B006886DA /* NSTextField+stringPublisher.swift */; };
-		CE8852282359CB64006886DA /* NSButton+statePublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8852272359CB64006886DA /* NSButton+statePublisher.swift */; };
-		CE934CD423314A9C005F8869 /* VisibleLimitedTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE934CD323314A9C005F8869 /* VisibleLimitedTableView.swift */; };
-		CE934CD62331DFC5005F8869 /* TweetCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE934CD52331DFC5005F8869 /* TweetCellView.swift */; };
-		CE934CD82331F254005F8869 /* TextLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE934CD72331F254005F8869 /* TextLabel.swift */; };
 		CEA0A4FE232E5F27009F1976 /* TwitterStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA0A4FD232E5F27009F1976 /* TwitterStatus.swift */; };
 		CEA0A500232E5F8A009F1976 /* TwitterUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA0A4FF232E5F8A009F1976 /* TwitterUser.swift */; };
-		CEC2E2D0232BFFA000CF1028 /* StoryboardScenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2E2CE232BFFA000CF1028 /* StoryboardScenes.swift */; };
-		CEC2E2D1232BFFA000CF1028 /* StoryboardSegues.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2E2CF232BFFA000CF1028 /* StoryboardSegues.swift */; };
-		CEC2E2D3232C065F00CF1028 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2E2D2232C065F00CF1028 /* ViewController.swift */; };
-		CEEDAE422332497F005EBF31 /* SpacerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEDAE412332497F005EBF31 /* SpacerView.swift */; };
+		CEC35AB02767D2AE0072C99D /* TwiLiveApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC35AAF2767D2AE0072C99D /* TwiLiveApp.swift */; };
+		CEC35AB22767D4AA0072C99D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC35AB12767D4AA0072C99D /* MainView.swift */; };
+		CEC35AB42767D6D50072C99D /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC35AB32767D6D50072C99D /* TimelineView.swift */; };
+		CEC35AB62767D7320072C99D /* ComposeTweetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC35AB52767D7320072C99D /* ComposeTweetView.swift */; };
+		CEC35AB92767DA070072C99D /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = CEC35AB82767DA070072C99D /* Introspect */; };
+		CEC35ABB276808370072C99D /* TweetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC35ABA276808370072C99D /* TweetView.swift */; };
+		CEC35ABD27680E3E0072C99D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC35ABC27680E3E0072C99D /* LoginView.swift */; };
+		CEEB74C0276A527700E61688 /* SmallLoadingIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB74BF276A527700E61688 /* SmallLoadingIndicatorView.swift */; };
+		CEEB74C2276A597A00E61688 /* SelectableLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB74C1276A597A00E61688 /* SelectableLink.swift */; };
+		CEEB74C6276A6B0A00E61688 /* AuthorizedAccountStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB74C5276A6B0A00E61688 /* AuthorizedAccountStore.swift */; };
 		CEF78A9B232D5840006C6343 /* OAuthSigner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF78A9A232D5840006C6343 /* OAuthSigner.swift */; };
 		CEF78A9D232D5A36006C6343 /* TwitterAuthRequestToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF78A9C232D5A36006C6343 /* TwitterAuthRequestToken.swift */; };
 		CEF78A9F232DE1B3006C6343 /* TwitterAuthAccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF78A9E232DE1B3006C6343 /* TwitterAuthAccessToken.swift */; };
-		CEF78AA1232E20AE006C6343 /* ComposeTweetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF78AA0232E20AE006C6343 /* ComposeTweetViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,19 +84,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1E8D5511680343F783E69656 /* Pods-TwiLive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwiLive.debug.xcconfig"; path = "Target Support Files/Pods-TwiLive/Pods-TwiLive.debug.xcconfig"; sourceTree = "<group>"; };
-		7C89308E708B2FA03ACE5CC4 /* Pods-TwiLive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwiLive.release.xcconfig"; path = "Target Support Files/Pods-TwiLive/Pods-TwiLive.release.xcconfig"; sourceTree = "<group>"; };
+		CE0521FF2777ED9C003B036E /* introspectWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = introspectWindow.swift; sourceTree = "<group>"; };
+		CE0522012777EDFF003B036E /* introspectSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = introspectSplitViewController.swift; sourceTree = "<group>"; };
+		CE0522032777F673003B036E /* ChangeHashtagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeHashtagView.swift; sourceTree = "<group>"; };
+		CE0522052777FC2C003B036E /* TimelineStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineStore.swift; sourceTree = "<group>"; };
 		CE06F5C2244AFDBD00CF3AF7 /* libTwiLiveThirdLibraries.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libTwiLiveThirdLibraries.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE06F5DF244B059D00CF3AF7 /* Dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dummy.swift; sourceTree = "<group>"; };
 		CE06F5EB244B25F300CF3AF7 /* TwitterSearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterSearchResult.swift; sourceTree = "<group>"; };
-		CE07ABB923332B8600FB530D /* NSEdgeInsets+easyInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSEdgeInsets+easyInit.swift"; sourceTree = "<group>"; };
-		CE07ABBC2333731800FB530D /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
 		CE381290232D4502005D0218 /* String+parseQueryParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+parseQueryParameters.swift"; sourceTree = "<group>"; };
 		CE5395B42324A54300198A0D /* TwiLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwiLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE5395B72324A54300198A0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CE5395B92324A54300198A0D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		CE5395BB2324A54500198A0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CE5395BE2324A54500198A0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE5395C02324A54500198A0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE5395C12324A54500198A0D /* TwiLive.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TwiLive.entitlements; sourceTree = "<group>"; };
 		CE5395C62324A54500198A0D /* TwiLiveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwiLiveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,25 +106,20 @@
 		CE5F0095232CA4CC002840A4 /* CharacterSet+rfc3986.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CharacterSet+rfc3986.swift"; sourceTree = "<group>"; };
 		CE5F00BD232CDAFB002840A4 /* String+hmacSHA1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+hmacSHA1.swift"; sourceTree = "<group>"; };
 		CE5F00C0232CDDFC002840A4 /* UserAgent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAgent.swift; sourceTree = "<group>"; };
-		CE7188C5232B640800C34398 /* TimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
-		CE885220235979A2006886DA /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
-		CE88522223597CDF006886DA /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
-		CE8852252359A85B006886DA /* NSTextField+stringPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSTextField+stringPublisher.swift"; sourceTree = "<group>"; };
-		CE8852272359CB64006886DA /* NSButton+statePublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSButton+statePublisher.swift"; sourceTree = "<group>"; };
-		CE934CD323314A9C005F8869 /* VisibleLimitedTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisibleLimitedTableView.swift; sourceTree = "<group>"; };
-		CE934CD52331DFC5005F8869 /* TweetCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetCellView.swift; sourceTree = "<group>"; };
-		CE934CD72331F254005F8869 /* TextLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextLabel.swift; sourceTree = "<group>"; };
 		CEA0A4FD232E5F27009F1976 /* TwitterStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterStatus.swift; sourceTree = "<group>"; };
 		CEA0A4FF232E5F8A009F1976 /* TwitterUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterUser.swift; sourceTree = "<group>"; };
-		CEC2E2CA232BFEA300CF1028 /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
-		CEC2E2CE232BFFA000CF1028 /* StoryboardScenes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardScenes.swift; sourceTree = "<group>"; };
-		CEC2E2CF232BFFA000CF1028 /* StoryboardSegues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardSegues.swift; sourceTree = "<group>"; };
-		CEC2E2D2232C065F00CF1028 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CEEDAE412332497F005EBF31 /* SpacerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacerView.swift; sourceTree = "<group>"; };
+		CEC35AAF2767D2AE0072C99D /* TwiLiveApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwiLiveApp.swift; sourceTree = "<group>"; };
+		CEC35AB12767D4AA0072C99D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		CEC35AB32767D6D50072C99D /* TimelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineView.swift; sourceTree = "<group>"; };
+		CEC35AB52767D7320072C99D /* ComposeTweetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeTweetView.swift; sourceTree = "<group>"; };
+		CEC35ABA276808370072C99D /* TweetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetView.swift; sourceTree = "<group>"; };
+		CEC35ABC27680E3E0072C99D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		CEEB74BF276A527700E61688 /* SmallLoadingIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallLoadingIndicatorView.swift; sourceTree = "<group>"; };
+		CEEB74C1276A597A00E61688 /* SelectableLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableLink.swift; sourceTree = "<group>"; };
+		CEEB74C5276A6B0A00E61688 /* AuthorizedAccountStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizedAccountStore.swift; sourceTree = "<group>"; };
 		CEF78A9A232D5840006C6343 /* OAuthSigner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthSigner.swift; sourceTree = "<group>"; };
 		CEF78A9C232D5A36006C6343 /* TwitterAuthRequestToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterAuthRequestToken.swift; sourceTree = "<group>"; };
 		CEF78A9E232DE1B3006C6343 /* TwitterAuthAccessToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterAuthAccessToken.swift; sourceTree = "<group>"; };
-		CEF78AA0232E20AE006C6343 /* ComposeTweetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeTweetViewController.swift; sourceTree = "<group>"; };
 		EDBB449F24E4EEC2446D2FD1 /* Pods_TwiLive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwiLive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -143,10 +129,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE06F5EA244B0E0300CF3AF7 /* Regex in Frameworks */,
-				CE06F5D8244AFE8A00CF3AF7 /* Nuke in Frameworks */,
 				CE06F5DB244AFEC500CF3AF7 /* Alamofire in Frameworks */,
 				CE06F5CC244AFDC900CF3AF7 /* HTMLEntities in Frameworks */,
-				CE06F5D5244AFE3300CF3AF7 /* SnapKit in Frameworks */,
+				CE052209277844D9003B036E /* NukeUI in Frameworks */,
+				CEC35AB92767DA070072C99D /* Introspect in Frameworks */,
 				CE06F5E8244B0DF200CF3AF7 /* KeychainAccess in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -156,7 +142,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE06F5CF244AFDDE00CF3AF7 /* libTwiLiveThirdLibraries.dylib in Frameworks */,
-				A432B5500D2D58858DCAF639 /* Pods_TwiLive.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,13 +170,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CDC15865CAF7B59E2AEE75AC /* Pods */ = {
+		CE0521FE2777ED76003B036E /* Introspect */ = {
 			isa = PBXGroup;
 			children = (
-				1E8D5511680343F783E69656 /* Pods-TwiLive.debug.xcconfig */,
-				7C89308E708B2FA03ACE5CC4 /* Pods-TwiLive.release.xcconfig */,
+				CE0521FF2777ED9C003B036E /* introspectWindow.swift */,
+				CE0522012777EDFF003B036E /* introspectSplitViewController.swift */,
 			);
-			path = Pods;
+			path = Introspect;
 			sourceTree = "<group>";
 		};
 		CE06F5C3244AFDBD00CF3AF7 /* TwiLiveThirdLibraries */ = {
@@ -202,24 +187,14 @@
 			path = TwiLiveThirdLibraries;
 			sourceTree = "<group>";
 		};
-		CE07ABBB233371FF00FB530D /* WindowControllers */ = {
-			isa = PBXGroup;
-			children = (
-				CE07ABBC2333731800FB530D /* MainWindowController.swift */,
-			);
-			path = WindowControllers;
-			sourceTree = "<group>";
-		};
 		CE5395AB2324A54300198A0D = {
 			isa = PBXGroup;
 			children = (
-				CEC2E2CA232BFEA300CF1028 /* swiftgen.yml */,
 				CE5395B62324A54300198A0D /* TwiLive */,
 				CE5395C92324A54500198A0D /* TwiLiveTests */,
 				CE5395D42324A54500198A0D /* TwiLiveUITests */,
 				CE06F5C3244AFDBD00CF3AF7 /* TwiLiveThirdLibraries */,
 				CE5395B52324A54300198A0D /* Products */,
-				CDC15865CAF7B59E2AEE75AC /* Pods */,
 				1F5E9B3C3C32D3D7F356EE53 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -238,17 +213,15 @@
 		CE5395B62324A54300198A0D /* TwiLive */ = {
 			isa = PBXGroup;
 			children = (
-				CE5395B72324A54300198A0D /* AppDelegate.swift */,
+				CEC35AAF2767D2AE0072C99D /* TwiLiveApp.swift */,
 				CE5395BB2324A54500198A0D /* Assets.xcassets */,
 				CE5395C02324A54500198A0D /* Info.plist */,
 				CE5395C12324A54500198A0D /* TwiLive.entitlements */,
-				CE5395BD2324A54500198A0D /* Main.storyboard */,
-				CEA0A501232E6BE4009F1976 /* Views */,
-				CE5F0090232C97C0002840A4 /* ViewControllers */,
-				CE07ABBB233371FF00FB530D /* WindowControllers */,
+				CE0521FE2777ED76003B036E /* Introspect */,
+				CEA0A501232E6BE4009F1976 /* View */,
+				CEEB74C4276A6AEF00E61688 /* Model */,
 				CE5F0091232C9E4F002840A4 /* TwitterAPI */,
 				CE5F00BF232CDDF1002840A4 /* Common */,
-				CEC2E2CD232BFF5700CF1028 /* Generated */,
 			);
 			path = TwiLive;
 			sourceTree = "<group>";
@@ -271,17 +244,6 @@
 			path = TwiLiveUITests;
 			sourceTree = "<group>";
 		};
-		CE5F0090232C97C0002840A4 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				CE5395B92324A54300198A0D /* MainViewController.swift */,
-				CE88521F2358D77F006886DA /* LoginWithTwitter */,
-				CE7188C5232B640800C34398 /* TimelineViewController.swift */,
-				CEF78AA0232E20AE006C6343 /* ComposeTweetViewController.swift */,
-			);
-			path = ViewControllers;
-			sourceTree = "<group>";
-		};
 		CE5F0091232C9E4F002840A4 /* TwitterAPI */ = {
 			isa = PBXGroup;
 			children = (
@@ -294,11 +256,9 @@
 		CE5F0094232CA4BB002840A4 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				CE8852242359A843006886DA /* Combine */,
 				CE5F0095232CA4CC002840A4 /* CharacterSet+rfc3986.swift */,
 				CE381290232D4502005D0218 /* String+parseQueryParameters.swift */,
 				CE5F00BD232CDAFB002840A4 /* String+hmacSHA1.swift */,
-				CE07ABB923332B8600FB530D /* NSEdgeInsets+easyInit.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -308,28 +268,8 @@
 			children = (
 				CE5F0094232CA4BB002840A4 /* Extensions */,
 				CE5F00C0232CDDFC002840A4 /* UserAgent.swift */,
-				CE934CD323314A9C005F8869 /* VisibleLimitedTableView.swift */,
 			);
 			path = Common;
-			sourceTree = "<group>";
-		};
-		CE88521F2358D77F006886DA /* LoginWithTwitter */ = {
-			isa = PBXGroup;
-			children = (
-				CE885220235979A2006886DA /* View.swift */,
-				CEC2E2D2232C065F00CF1028 /* ViewController.swift */,
-				CE88522223597CDF006886DA /* ViewModel.swift */,
-			);
-			path = LoginWithTwitter;
-			sourceTree = "<group>";
-		};
-		CE8852242359A843006886DA /* Combine */ = {
-			isa = PBXGroup;
-			children = (
-				CE8852252359A85B006886DA /* NSTextField+stringPublisher.swift */,
-				CE8852272359CB64006886DA /* NSButton+statePublisher.swift */,
-			);
-			path = Combine;
 			sourceTree = "<group>";
 		};
 		CEA0A4FC232E5F16009F1976 /* Entity */ = {
@@ -342,23 +282,36 @@
 			path = Entity;
 			sourceTree = "<group>";
 		};
-		CEA0A501232E6BE4009F1976 /* Views */ = {
+		CEA0A501232E6BE4009F1976 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				CE934CD52331DFC5005F8869 /* TweetCellView.swift */,
-				CE934CD72331F254005F8869 /* TextLabel.swift */,
-				CEEDAE412332497F005EBF31 /* SpacerView.swift */,
+				CEC35AB12767D4AA0072C99D /* MainView.swift */,
+				CE0522032777F673003B036E /* ChangeHashtagView.swift */,
+				CEC35ABC27680E3E0072C99D /* LoginView.swift */,
+				CEC35AB32767D6D50072C99D /* TimelineView.swift */,
+				CEC35AB52767D7320072C99D /* ComposeTweetView.swift */,
+				CEEB74C7276A711800E61688 /* Common */,
 			);
-			path = Views;
+			path = View;
 			sourceTree = "<group>";
 		};
-		CEC2E2CD232BFF5700CF1028 /* Generated */ = {
+		CEEB74C4276A6AEF00E61688 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				CEC2E2CE232BFFA000CF1028 /* StoryboardScenes.swift */,
-				CEC2E2CF232BFFA000CF1028 /* StoryboardSegues.swift */,
+				CEEB74C5276A6B0A00E61688 /* AuthorizedAccountStore.swift */,
+				CE0522052777FC2C003B036E /* TimelineStore.swift */,
 			);
-			path = Generated;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CEEB74C7276A711800E61688 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CEC35ABA276808370072C99D /* TweetView.swift */,
+				CEEB74C1276A597A00E61688 /* SelectableLink.swift */,
+				CEEB74BF276A527700E61688 /* SmallLoadingIndicatorView.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		CEF78AA2232E25AA006C6343 /* Auth */ = {
@@ -400,11 +353,11 @@
 			name = TwiLiveThirdLibraries;
 			packageProductDependencies = (
 				CE06F5CB244AFDC900CF3AF7 /* HTMLEntities */,
-				CE06F5D4244AFE3300CF3AF7 /* SnapKit */,
-				CE06F5D7244AFE8A00CF3AF7 /* Nuke */,
 				CE06F5DA244AFEC500CF3AF7 /* Alamofire */,
 				CE06F5E7244B0DF200CF3AF7 /* KeychainAccess */,
 				CE06F5E9244B0E0300CF3AF7 /* Regex */,
+				CEC35AB82767DA070072C99D /* Introspect */,
+				CE052208277844D9003B036E /* NukeUI */,
 			);
 			productName = TwiLiveThirdLibraries;
 			productReference = CE06F5C2244AFDBD00CF3AF7 /* libTwiLiveThirdLibraries.dylib */;
@@ -414,13 +367,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE5395DA2324A54500198A0D /* Build configuration list for PBXNativeTarget "TwiLive" */;
 			buildPhases = (
-				D8D1FB7B0A126CFFC63AD1CE /* [CP] Check Pods Manifest.lock */,
-				CEC2E2CC232BFF2A00CF1028 /* SwiftGen */,
 				CE5395B02324A54300198A0D /* Sources */,
 				CE5395B12324A54300198A0D /* Frameworks */,
 				CE5395B22324A54300198A0D /* Resources */,
 				CE5F00B6232CC01C002840A4 /* Embed Frameworks */,
-				074A958722C707C0070E27E4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -477,7 +427,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1320;
 				ORGANIZATIONNAME = rinsuki;
 				TargetAttributes = {
 					CE06F5C1244AFDBD00CF3AF7 = {
@@ -508,11 +458,11 @@
 			mainGroup = CE5395AB2324A54300198A0D;
 			packageReferences = (
 				CE06F5BB244AFBA400CF3AF7 /* XCRemoteSwiftPackageReference "swift-html-entities" */,
-				CE06F5D3244AFE3300CF3AF7 /* XCRemoteSwiftPackageReference "SnapKit" */,
-				CE06F5D6244AFE8A00CF3AF7 /* XCRemoteSwiftPackageReference "Nuke" */,
 				CE06F5D9244AFEC500CF3AF7 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				CE06F5E1244B08DD00CF3AF7 /* XCRemoteSwiftPackageReference "Regex" */,
 				CE06F5E4244B0DEA00CF3AF7 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+				CEC35AB72767DA070072C99D /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
+				CE0522072778444E003B036E /* XCRemoteSwiftPackageReference "NukeUI" */,
 			);
 			productRefGroup = CE5395B52324A54300198A0D /* Products */;
 			projectDirPath = "";
@@ -532,7 +482,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE5395BC2324A54500198A0D /* Assets.xcassets in Resources */,
-				CE5395BF2324A54500198A0D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,66 +501,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		074A958722C707C0070E27E4 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TwiLive/Pods-TwiLive-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TwiLive/Pods-TwiLive-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TwiLive/Pods-TwiLive-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CEC2E2CC232BFF2A00CF1028 /* SwiftGen */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = SwiftGen;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/SwiftGen/bin/swiftgen\"\n";
-		};
-		D8D1FB7B0A126CFFC63AD1CE /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TwiLive-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		CE06F5BF244AFDBD00CF3AF7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -625,33 +514,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE8852282359CB64006886DA /* NSButton+statePublisher.swift in Sources */,
-				CE5395BA2324A54300198A0D /* MainViewController.swift in Sources */,
-				CE07ABBD2333731800FB530D /* MainWindowController.swift in Sources */,
-				CE5395B82324A54300198A0D /* AppDelegate.swift in Sources */,
 				CE06F5EC244B25F300CF3AF7 /* TwitterSearchResult.swift in Sources */,
-				CEF78AA1232E20AE006C6343 /* ComposeTweetViewController.swift in Sources */,
-				CEC2E2D1232BFFA000CF1028 /* StoryboardSegues.swift in Sources */,
-				CE88522323597CDF006886DA /* ViewModel.swift in Sources */,
-				CE7188C6232B640800C34398 /* TimelineViewController.swift in Sources */,
+				CEC35AB42767D6D50072C99D /* TimelineView.swift in Sources */,
+				CEC35ABD27680E3E0072C99D /* LoginView.swift in Sources */,
+				CEEB74C2276A597A00E61688 /* SelectableLink.swift in Sources */,
 				CEA0A4FE232E5F27009F1976 /* TwitterStatus.swift in Sources */,
-				CE8852262359A85B006886DA /* NSTextField+stringPublisher.swift in Sources */,
-				CE934CD423314A9C005F8869 /* VisibleLimitedTableView.swift in Sources */,
-				CE885221235979A2006886DA /* View.swift in Sources */,
+				CEEB74C0276A527700E61688 /* SmallLoadingIndicatorView.swift in Sources */,
+				CEC35AB62767D7320072C99D /* ComposeTweetView.swift in Sources */,
+				CEEB74C6276A6B0A00E61688 /* AuthorizedAccountStore.swift in Sources */,
+				CEC35AB02767D2AE0072C99D /* TwiLiveApp.swift in Sources */,
+				CEC35AB22767D4AA0072C99D /* MainView.swift in Sources */,
 				CEF78A9D232D5A36006C6343 /* TwitterAuthRequestToken.swift in Sources */,
+				CE0522042777F673003B036E /* ChangeHashtagView.swift in Sources */,
 				CEA0A500232E5F8A009F1976 /* TwitterUser.swift in Sources */,
-				CE07ABBA23332B8600FB530D /* NSEdgeInsets+easyInit.swift in Sources */,
-				CE934CD62331DFC5005F8869 /* TweetCellView.swift in Sources */,
+				CE0522002777ED9C003B036E /* introspectWindow.swift in Sources */,
+				CE0522062777FC2C003B036E /* TimelineStore.swift in Sources */,
+				CE0522022777EDFF003B036E /* introspectSplitViewController.swift in Sources */,
 				CE381291232D4502005D0218 /* String+parseQueryParameters.swift in Sources */,
 				CE5F00C1232CDDFC002840A4 /* UserAgent.swift in Sources */,
 				CE5F0093232C9E8F002840A4 /* TwitterAuthApp.swift in Sources */,
-				CEC2E2D3232C065F00CF1028 /* ViewController.swift in Sources */,
-				CEEDAE422332497F005EBF31 /* SpacerView.swift in Sources */,
 				CE5F0096232CA4CC002840A4 /* CharacterSet+rfc3986.swift in Sources */,
-				CE934CD82331F254005F8869 /* TextLabel.swift in Sources */,
+				CEC35ABB276808370072C99D /* TweetView.swift in Sources */,
 				CEF78A9B232D5840006C6343 /* OAuthSigner.swift in Sources */,
 				CE5F00BE232CDAFB002840A4 /* String+hmacSHA1.swift in Sources */,
-				CEC2E2D0232BFFA000CF1028 /* StoryboardScenes.swift in Sources */,
 				CEF78A9F232DE1B3006C6343 /* TwitterAuthAccessToken.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -691,17 +576,6 @@
 			targetProxy = CE5395D22324A54500198A0D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		CE5395BD2324A54500198A0D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CE5395BE2324A54500198A0D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CE06F5C9244AFDBD00CF3AF7 /* Debug */ = {
@@ -773,6 +647,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -797,7 +672,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -833,6 +708,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -851,7 +727,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -862,7 +738,6 @@
 		};
 		CE5395DB2324A54500198A0D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1E8D5511680343F783E69656 /* Pods-TwiLive.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -884,7 +759,6 @@
 		};
 		CE5395DC2324A54500198A0D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C89308E708B2FA03ACE5CC4 /* Pods-TwiLive.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1039,28 +913,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		CE0522072778444E003B036E /* XCRemoteSwiftPackageReference "NukeUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/NukeUI";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.7.0;
+			};
+		};
 		CE06F5BB244AFBA400CF3AF7 /* XCRemoteSwiftPackageReference "swift-html-entities" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/IBM-Swift/swift-html-entities";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 3.0.14;
-			};
-		};
-		CE06F5D3244AFE3300CF3AF7 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SnapKit/SnapKit";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.1;
-			};
-		};
-		CE06F5D6244AFE8A00CF3AF7 /* XCRemoteSwiftPackageReference "Nuke" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/kean/Nuke";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 8.4.1;
 			};
 		};
 		CE06F5D9244AFEC500CF3AF7 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
@@ -1087,23 +953,26 @@
 				minimumVersion = 4.1.0;
 			};
 		};
+		CEC35AB72767DA070072C99D /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/siteline/SwiftUI-Introspect";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.1.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		CE052208277844D9003B036E /* NukeUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE0522072778444E003B036E /* XCRemoteSwiftPackageReference "NukeUI" */;
+			productName = NukeUI;
+		};
 		CE06F5CB244AFDC900CF3AF7 /* HTMLEntities */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CE06F5BB244AFBA400CF3AF7 /* XCRemoteSwiftPackageReference "swift-html-entities" */;
 			productName = HTMLEntities;
-		};
-		CE06F5D4244AFE3300CF3AF7 /* SnapKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CE06F5D3244AFE3300CF3AF7 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = SnapKit;
-		};
-		CE06F5D7244AFE8A00CF3AF7 /* Nuke */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CE06F5D6244AFE8A00CF3AF7 /* XCRemoteSwiftPackageReference "Nuke" */;
-			productName = Nuke;
 		};
 		CE06F5DA244AFEC500CF3AF7 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -1119,6 +988,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = CE06F5E1244B08DD00CF3AF7 /* XCRemoteSwiftPackageReference "Regex" */;
 			productName = Regex;
+		};
+		CEC35AB82767DA070072C99D /* Introspect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEC35AB72767DA070072C99D /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
+			productName = Introspect;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

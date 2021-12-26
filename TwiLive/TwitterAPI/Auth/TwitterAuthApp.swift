@@ -15,10 +15,37 @@ struct TwitterAuthApp: Codable {
     var appKey: String
     var appSecret: String
     
-    func getRequestToken() -> URLRequest {
+    func getRequestTokenRequest() -> URLRequest {
         return OAuthSigner(consumerKey: appKey, consumerSecret: appSecret).signedRequest(
             .post, url: URL(string: "https://api.twitter.com/oauth/request_token")!,
             params: ["oauth_callback": "oob"]
         )
+    }
+    
+    enum FetchRequestTokenError: Error {
+        case http(code: Int, message: String)
+        case `internal`(message: String)
+    }
+    
+    func getRequestToken() async throws -> TwitterAuthRequestToken {
+        let (data, response) = try await URLSession.shared.data(for: getRequestTokenRequest())
+        guard let str = String(data: data, encoding: .utf8) else {
+            throw FetchRequestTokenError.internal(message: "Failed to parse response as UTF-8 string")
+        }
+        guard let response = response as? HTTPURLResponse else {
+            throw FetchRequestTokenError.internal(message: "Failed to cast URLResponse → HTTPURLResponse")
+        }
+        guard response.statusCode == 200 else {
+            throw FetchRequestTokenError.http(code: response.statusCode, message: str)
+        }
+        let res = str.parseQueryParameters()
+        guard res["oauth_callback_confirmed"] == "true" else {
+            throw FetchRequestTokenError.internal(message: "oauth_callback_confirmed is not true")
+        }
+        guard let token = res["oauth_token"], let tokenSecret = res["oauth_token_secret"] else {
+            throw FetchRequestTokenError.internal(message: "failed to find oauth_token or secret")
+        }
+
+        return TwitterAuthRequestToken(app: self, token: token, tokenSecret: tokenSecret)
     }
 }
