@@ -26,24 +26,43 @@ class TimelineStore: ObservableObject {
         currentTask?.cancel()
     }
     
+    /// ユーザーがTwitterでミュートしているユーザーIDs
+    var muteUserIds = Set<Int64>()
+    
     func start(hashtag: String, accessToken: TwitterAuthAccessToken) {
         self.hashtag = hashtag
         Task.detached(priority: .userInitiated) {
-            await MainActor.run {
-                self.tweets = []
-                self.tweetIds = .init()
-            }
             let decoder = JSONDecoder()
             let formatter = DateFormatter()
             formatter.locale = .init(identifier: "en_US_POSIX")
             formatter.dateFormat = "EEE MMM dd HH:mm:ss Z yyyy"
             decoder.dateDecodingStrategy = .formatted(formatter)
+            let fetchMuteListTask = Task {
+                guard self.muteUserIds.count == 0 else {
+                    return
+                }
+                // TODO: paging
+                let (muteIdsData, muteIdsResponse) = try await accessToken.signer.data(
+                    .get, url: URL(string: "https://api.twitter.com/1.1/mutes/users/ids.json")!,
+                    params: [:]
+                )
+                struct MuteIDs: Codable {
+                    let ids: [Int64]
+                }
+                let muteIds = try decoder.decode(MuteIDs.self, from: muteIdsData)
+                self.muteUserIds = .init(muteIds.ids)
+            }
+            await MainActor.run {
+                self.tweets = []
+                self.tweetIds = .init()
+            }
             let (searchData, searchResponse) = try await accessToken.signer.data(
                 .get, url: URL(string: "https://api.twitter.com/1.1/search/tweets.json")!,
                 params: ["q": hashtag + " exclude:retweets", "result_type": "recent", "count": "50", "tweet_mode": "extended"]
             )
 //            print(String(data: searchData, encoding: .utf8))
             let searchResult = try decoder.decode(TwitterSearchResult.self, from: searchData)
+            try await fetchMuteListTask.get()
             let tweets = searchResult.statuses.filter { !self.isTweetShouldSkip(tweet: $0) }
             await MainActor.run {
                 self.tweets = tweets
@@ -90,6 +109,9 @@ class TimelineStore: ObservableObject {
     
     func isTweetShouldSkip(tweet: TwitterStatus) -> Bool {
         if tweet.source.contains("Rakuten Group, Inc.") {
+            return true
+        }
+        if muteUserIds.contains(tweet.user.id) {
             return true
         }
         return !tweet.entities.hashtags.contains { $0.text.lowercased() == hashtag.lowercased() }
