@@ -58,7 +58,7 @@ class TimelineStore: ObservableObject {
             }
             let (searchData, searchResponse) = try await accessToken.signer.data(
                 .get, url: URL(string: "https://api.twitter.com/1.1/search/tweets.json")!,
-                params: ["q": hashtag + " exclude:retweets", "result_type": "recent", "count": "50", "tweet_mode": "extended"]
+                params: ["q": "#" + hashtag + " exclude:retweets", "result_type": "recent", "count": "50", "tweet_mode": "extended"]
             )
 //            print(String(data: searchData, encoding: .utf8))
             let searchResult = try decoder.decode(TwitterSearchResult.self, from: searchData)
